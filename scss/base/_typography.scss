@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'TWK Everett';
+    src: url('../fonts/everett/twkeverett-medium-webfont.woff2') format('woff2'),
+         url('../fonts/everett/twkeverett-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: medium;
+
+}
+
+
+    @font-face {
+        font-family: 'TWK Everett';
+        src: url('../fonts/everett/twkeverett-bold-webfont.woff2') format('woff2'),
+            url('../fonts/everett/twkeverett-bold-webfont.woff') format('woff');
+        font-weight: 700;
+        font-style: bold;
+
+    }
+
+
+    @font-face {
+        font-family: 'TWK Everett';
+        src:  url('../fonts/everett/twkeverett-regular-webfont.woff2') format('woff2'),
+         url('../fonts/everett/twkeverett-regular-webfont.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+
+    @font-face {
+        font-family: 'Arimo';
+        src: url('../fonts/arimo/Arimo-VariableFont_wght.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+
+    }

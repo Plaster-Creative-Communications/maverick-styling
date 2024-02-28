@@ -1,0 +1,105 @@
+// Base -reset
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+    
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: normal;
+    width: 100%;
+    font-size: 1rem;
+    font-family: $font, 'Arial';
+    color: $grey;
+}
+main {
+    max-width: 1280px;
+    margin-inline: auto;
+    background-color: $greyLighter;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $blue;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    overflow: auto;
+}
+.mav-center {
+    text-align: center;
+    margin-inline: auto;
+}
+
+.mav-line-break {
+    width: calc(100% - 50px);
+    margin-inline: auto;
+    margin-block: 25px;
+    height: 1px;
+    background-color: $greyLight;
+
+}
+
+.mav-heading {
+    &__h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    &__h2 {
+        font-size: 3.8rem;
+        font-weight: 500;
+        color: $navy;
+    }
+    &__h3 {
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: $navy;
+    }
+}
+
+.mav-body-p {
+    font-family: $fontBody, 'Inter', "Arial";
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding-block:5px;
+    line-height: 1.7;
+    max-width: 900px;
+    
+}
+
+.mav-white {
+    color: white;
+}
+.mav-blue {
+    color: $blue;
+}
+
+.mav-spacer {
+height: 25px;
+}
+// This is a Normalize that makes browsers render all elements more consistently
+// and in line with modern standards.
