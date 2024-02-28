@@ -457,12 +457,12 @@ textarea {
 }
 
 .mav-button {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #0C073D;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 12px 38px;
+  padding: 15px 38px;
   border-radius: 25px;
   border: none;
   outline: none;
