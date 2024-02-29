@@ -66,36 +66,39 @@ textarea {
 
 .mav-heading {
     &__h1 {
-        font-size: 4rem;
-        font-weight: 600;
+        font-size: 4rem!important;
+        font-weight: 600!important;
+        font-family: $font, 'Arial'!important;
     }
     &__h2 {
-        font-size: 3.8rem;
-        font-weight: 500;
-        color: $navy;
+        font-size: 3.8rem!important;
+        font-weight: 500!important;
+        color: $navy!important;
+        font-family: $font, 'Arial'!important;
     }
     &__h3 {
-        font-size: 2.2rem;
-        font-weight: 300;
-        color: $navy;
+        font-size: 2.2rem!important;
+        font-weight: 300!important;
+        color: $navy!important;
+        font-family: $font, 'Arial'!important;
     }
 }
 
 .mav-body-p {
-    font-family: $fontBody, 'Inter', "Arial";
-    font-size: 1.8rem;
-    font-weight: 300;
-    padding-block:5px;
-    line-height: 1.7;
-    max-width: 900px;
+    font-family: $fontBody, 'Inter', "Arial"!important;;
+    font-size: 1.8rem!important;;
+    font-weight: 300!important;;
+    padding-block:5px!important;;
+    line-height: 1.7!important;;
+    max-width: 900px!important;;
     
 }
 
 .mav-white {
-    color: white;
+    color: white!important;;
 }
 .mav-blue {
-    color: $blue;
+    color: $blue!important;;
 }
 
 .mav-spacer {
