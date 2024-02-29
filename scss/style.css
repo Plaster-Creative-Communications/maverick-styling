@@ -86,35 +86,38 @@ textarea {
 }
 
 .mav-heading__h1 {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 4rem !important;
+  font-weight: 600 !important;
+  font-family: "TWK Everett", "Arial" !important;
 }
 .mav-heading__h2 {
-  font-size: 3.8rem;
-  font-weight: 500;
-  color: #0C073D;
+  font-size: 3.8rem !important;
+  font-weight: 500 !important;
+  color: #0C073D !important;
+  font-family: "TWK Everett", "Arial" !important;
 }
 .mav-heading__h3 {
-  font-size: 2.2rem;
-  font-weight: 300;
-  color: #0C073D;
+  font-size: 2.2rem !important;
+  font-weight: 300 !important;
+  color: #0C073D !important;
+  font-family: "TWK Everett", "Arial" !important;
 }
 
 .mav-body-p {
-  font-family: "Arimo", "Inter", "Arial";
-  font-size: 1.8rem;
-  font-weight: 300;
-  padding-block: 5px;
-  line-height: 1.7;
-  max-width: 900px;
+  font-family: "Arimo", "Inter", "Arial" !important;
+  font-size: 1.8rem !important;
+  font-weight: 300 !important;
+  padding-block: 5px !important;
+  line-height: 1.7 !important;
+  max-width: 900px !important;
 }
 
 .mav-white {
-  color: white;
+  color: white !important;
 }
 
 .mav-blue {
-  color: #337EB5;
+  color: #337EB5 !important;
 }
 
 .mav-spacer {
