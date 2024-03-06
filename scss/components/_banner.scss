@@ -9,11 +9,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin-block: 25px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
     &__content {
         width: 50%;
+        &-full-width {
+            width: 100%;
+        }
         .mav-body-p {
             padding-top:0;
-            margin-bottom: 15px;
+
+        }
+        a {
+            margin-top: 15px;
         }
     }
     &__image {

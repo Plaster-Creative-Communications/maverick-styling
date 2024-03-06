@@ -107,7 +107,7 @@ textarea {
   font-family: "Arimo", "Inter", "Arial" !important;
   font-size: 1.8rem !important;
   font-weight: 300 !important;
-  padding-block: 5px !important;
+  padding-block: 10px !important;
   line-height: 1.7 !important;
   max-width: 900px !important;
 }
@@ -175,6 +175,9 @@ textarea {
   width: 50%;
   padding: 25px;
 }
+.mav-2-col__content-full-width {
+  width: 100%;
+}
 .mav-2-col__image {
   width: 50%;
   display: flex;
@@ -235,6 +238,23 @@ textarea {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.18);
   margin-inline: auto;
   margin-bottom: 20px;
+}
+
+.mav-4-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding-inline: 50px;
+}
+.mav-4-col__col {
+  width: 100%;
+}
+.mav-4-col__icon {
+  margin-bottom: 20px;
+}
+.mav-4-col__icon img {
+  width: auto;
+  height: 50px;
 }
 
 .mav-contact__headshot {
@@ -320,6 +340,9 @@ textarea {
   width: 50%;
   padding: 25px;
 }
+.mav-2-col__content-full-width {
+  width: 100%;
+}
 .mav-2-col__image {
   width: 50%;
   display: flex;
@@ -380,6 +403,23 @@ textarea {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.18);
   margin-inline: auto;
   margin-bottom: 20px;
+}
+
+.mav-4-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding-inline: 50px;
+}
+.mav-4-col__col {
+  width: 100%;
+}
+.mav-4-col__icon {
+  margin-bottom: 20px;
+}
+.mav-4-col__icon img {
+  width: auto;
+  height: 50px;
 }
 
 .mav-contact__headshot {
@@ -572,13 +612,21 @@ textarea {
   background-size: cover;
   background-repeat: no-repeat;
   margin-block: 25px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
 }
 .mav-banner__content {
   width: 50%;
 }
+.mav-banner__content-full-width {
+  width: 100%;
+}
 .mav-banner__content .mav-body-p {
   padding-top: 0;
-  margin-bottom: 15px;
+}
+.mav-banner__content a {
+  margin-top: 15px;
 }
 .mav-banner__image {
   width: 50%;
@@ -587,4 +635,25 @@ textarea {
   max-height: 300px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.mav-list {
+  margin-block: 15px;
+}
+.mav-list__item {
+  display: flex !important;
+  padding-block: 5px !important;
+}
+.mav-list__tick {
+  width: 30px;
+  height: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.mav-list__tick svg {
+  width: 30px;
+}
+.mav-list p {
+  margin: 0 !important;
+  padding: 0 !important;
 }/*# sourceMappingURL=style.css.map */
