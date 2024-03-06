@@ -1,0 +1,22 @@
+.mav-list{
+    margin-block: 15px;
+    &__item {
+        display: flex!important; 
+        padding-block: 5px!important;
+        // align-items: center;
+
+    }
+    &__tick {
+        width: 30px;
+        height: 25px;
+        margin-top:10px;
+        margin-right:10px;
+        svg {
+            width: 30px;
+        }
+    }
+    p {
+        margin:0!important;
+        padding:0!important;
+    }
+}

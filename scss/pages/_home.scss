@@ -49,6 +49,9 @@
     &__content {
         width: 50%;
         padding: 25px;
+        &-full-width {
+            width: 100%;
+        }
     }
     &__image {
         width: 50%;
@@ -112,6 +115,22 @@
         box-shadow: 3px 3px 8px rgba(0,0,0,0.18);
         margin-inline: auto;
         margin-bottom:20px;
+    }
+}
+.mav-4-col {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    padding-inline: 50px;
+    &__col {
+        width: 100%;
+    }
+    &__icon {
+        margin-bottom:20px;
+        img {
+            width: auto;
+            height: 50px;
+        }
     }
 }
 
