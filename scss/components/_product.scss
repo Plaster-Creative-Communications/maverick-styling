@@ -1,0 +1,48 @@
+
+.mav-product {
+    border-radius: 16px;
+    box-shadow: 0 3px 18px rgba(0,0,0,0.12);
+    padding: 50px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: $white;
+    // justify-content: center;
+    margin-top: 50px;
+    &__image {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    &__logos {
+        width: 120px;
+        margin-top:15px;
+    }
+    .mav-line-break {
+        margin:0;
+        // width: 100%;
+    }
+}
+.mav-product-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // padding-block:25px;
+    &__image {
+        width: 50%;
+        height: 100%;
+        object-fit: fill;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        padding: 30px;
+        img {
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+    &__content {
+        padding-left: 30px;
+        width: 50%;
+    }
+}

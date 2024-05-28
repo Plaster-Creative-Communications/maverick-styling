@@ -72,6 +72,10 @@ textarea {
   overflow: auto;
 }
 
+.hide {
+  display: none;
+}
+
 .mav-center {
   text-align: center;
   margin-inline: auto;
@@ -122,6 +126,10 @@ textarea {
 
 .mav-spacer {
   height: 25px;
+}
+
+.mav-margin-block__10 {
+  margin-block: 10px;
 }
 
 .home-page {
@@ -500,7 +508,7 @@ textarea {
 }
 
 .mav-button {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: #0C073D;
   width: -moz-fit-content;
@@ -656,4 +664,59 @@ textarea {
 .mav-list p {
   margin: 0 !important;
   padding: 0 !important;
+}
+.mav-list__bullets {
+  margin-top: 5px;
+}
+.mav-list__bullets li {
+  list-style-type: disc;
+}
+.mav-list__bullets li p {
+  margin: 0;
+  padding: 0;
+}
+
+.mav-product {
+  border-radius: 16px;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.12);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  margin-top: 50px;
+}
+.mav-product__image {
+  width: 90%;
+  margin-bottom: 30px;
+}
+.mav-product__logos {
+  width: 120px;
+  margin-top: 15px;
+}
+.mav-product .mav-line-break {
+  margin: 0;
+}
+
+.mav-product-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.mav-product-row__image {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  padding: 30px;
+}
+.mav-product-row__image img {
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.mav-product-row__content {
+  padding-left: 30px;
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */

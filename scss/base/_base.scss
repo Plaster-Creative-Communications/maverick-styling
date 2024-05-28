@@ -50,6 +50,11 @@ textarea {
     outline: none;
     overflow: auto;
 }
+
+.hide {
+    display: none;
+}
+
 .mav-center {
     text-align: center;
     margin-inline: auto;
@@ -82,6 +87,7 @@ textarea {
         color: $navy!important;
         font-family: $font, 'Arial'!important;
     }
+   
 }
 
 .mav-body-p {
@@ -103,6 +109,12 @@ textarea {
 
 .mav-spacer {
 height: 25px;
+}
+
+.mav-margin-block {
+    &__10 {
+        margin-block: 10px;
+    }
 }
 // This is a Normalize that makes browsers render all elements more consistently
 // and in line with modern standards.

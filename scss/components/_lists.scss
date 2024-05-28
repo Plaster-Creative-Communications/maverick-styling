@@ -19,4 +19,14 @@
         margin:0!important;
         padding:0!important;
     }
+    &__bullets {
+        margin-top:5px;
+        li {
+            list-style-type: disc;
+            p {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
 }
