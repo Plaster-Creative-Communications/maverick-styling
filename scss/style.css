@@ -514,7 +514,7 @@ textarea {
 .mav-button {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #0C073D;
+  color: #0C073D !important;
   width: -moz-fit-content;
   width: fit-content;
   padding: 15px 38px;
