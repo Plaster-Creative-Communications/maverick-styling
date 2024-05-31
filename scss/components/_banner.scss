@@ -11,6 +11,7 @@
     margin-block: 25px;
     min-height: 300px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     &__content {
         width: 50%;
@@ -32,4 +33,15 @@
             object-fit: contain;
         }
     }
+   &__email-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 40px;
+    a {
+        margin: 0!important;
+        padding:0!important;
+    }
+   }
 }
