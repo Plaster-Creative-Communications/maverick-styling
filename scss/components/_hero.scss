@@ -41,11 +41,14 @@
         border-radius: 13px;
         margin: 0 auto;
         width: 60%;
+        background-color: $white;
         img {
             width: 80%;
             border: 30px $white solid;
             border-radius: 13px;
-            box-shadow: 0 4px 13px rgba(0,0,0,.18);
+            min-height: 200px;
+            object-fit: contain;
+            // box-shadow: 0 4px 13px rgba(0,0,0,.18);
         }
     }
 }

@@ -21,7 +21,10 @@
     }
     &__bullets {
         margin-top:5px;
+        list-style-type: disc;
+        padding-left: 15px;
         li {
+            display: list-item!important; 
             list-style-type: disc;
             p {
                 margin: 0;
