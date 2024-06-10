@@ -10,9 +10,9 @@
     background-repeat: no-repeat;
     margin-block: 25px;
     min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     &__content {
         width: 50%;
         &-full-width {
@@ -42,6 +42,45 @@
     a {
         margin: 0!important;
         padding:0!important;
+    }
+   }
+   &__contact {
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-left: 1px $white solid;
+        padding-left: 20px;;
+        .mav-contact-p {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-block:10px;
+            display: block;
+        }
+        .mav-contact-name {
+            font-size: 2.6rem;
+            font-weight: 600;
+        }
+        a{
+            transition: 0.2s ease;
+            &:hover {
+            text-decoration: underline;
+            }
+        }
+        .mav-link-icon {
+            margin-right:3px;
+        }
+        .mav-contact__image{
+            border-radius: 50%;
+            border: 4px $teal-6 solid;
+            overflow: hidden;
+            width: 120px;
+            margin-right:25px;
+        }
     }
    }
 }

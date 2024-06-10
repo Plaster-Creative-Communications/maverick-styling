@@ -19,4 +19,17 @@
         border: 1px $navy solid;
         background-color: rgba(255,255,255);
     }
+    &__blue {
+        border: 1px $teal-1 solid;
+        background-color: rgba(255,255,255); 
+        color: $teal-3!important;
+        box-shadow: 0px 2px 6px rgba(0,0,0,0.10);
+        padding: 18px 38px;
+        border-radius: 50px;
+        &.secondary {
+            border: 1px $teal-1 solid;
+            background-color: $teal-1; 
+            color: $white!important;
+        }
+    }
 }

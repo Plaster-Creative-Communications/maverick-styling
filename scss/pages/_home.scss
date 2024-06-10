@@ -46,6 +46,31 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    .mav-col {
+        width: 50%;
+        &.mav-image-bg {
+            background-color: $greyLighter;
+            min-height: 500px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            border-radius: 2px;
+            overflow: hidden;
+            img {
+                width: 65%;
+                height: fit-content;
+                margin-block: auto;
+            }
+        }
+        .mav-content{
+            width: 80%;
+            margin: auto;
+            .mav-button {
+                margin-top: 15px;
+                font-size: 1.8rem;
+            }
+        }
+    }
     &__content {
         width: 50%;
         padding: 25px;
@@ -115,6 +140,21 @@
         box-shadow: 3px 3px 8px rgba(0,0,0,0.18);
         margin-inline: auto;
         margin-bottom:20px;
+    }
+    &.mav-margin-block {
+        margin-block: 30px;
+    }
+}
+.mav-icon {
+    margin-bottom: 25px;;
+    &__bg {
+        background-color: $greyLighter;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 45px;
+        border-radius: 2px;
+        height: 190px;
     }
 }
 .mav-4-col {

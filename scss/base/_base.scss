@@ -28,6 +28,9 @@ main {
     max-width: 1280px;
     margin-inline: auto;
     background-color: $greyLighter;
+    &.mav-bg-none {
+        background-color:unset;
+    }
 }
 
 ul {
@@ -74,18 +77,43 @@ textarea {
         font-size: 4rem!important;
         font-weight: 600!important;
         font-family: $font, 'Arial'!important;
+        &.mav-bold {
+            font-weight: 600!important;
+        }
     }
     &__h2 {
         font-size: 3.8rem!important;
         font-weight: 500!important;
         color: $navy!important;
         font-family: $font, 'Arial'!important;
+        padding-bottom: 10px;
+        &.mav-center {
+            max-width: 950px;
+            margin-inline: auto;
+            text-align: center;
+        }
+        &.mav-bold {
+            font-weight: 600!important;
+        }
     }
     &__h3 {
         font-size: 2.2rem!important;
         font-weight: 300!important;
         color: $navy!important;
         font-family: $font, 'Arial'!important;
+        &.mav-bold {
+            font-weight: 600!important;
+        }
+    }
+    &__h4 {
+        font-size: 2.8rem!important;
+        font-weight: 300!important;
+        color: $navy!important;
+        font-family: $font, 'Arial'!important;
+        line-height: 1.3;
+        &.mav-bold {
+            font-weight: 600!important;
+        }
     }
    
 }
@@ -97,6 +125,13 @@ textarea {
     padding-block:10px!important;
     line-height: 1.7!important;
     max-width: 900px!important;
+    &.center {
+        text-align: center;
+        margin-inline: auto;
+    }
+    &.small {
+        font-size: 1.6rem!important;
+    }
     
 }
 
@@ -108,6 +143,16 @@ textarea {
 }
 .mav-blue {
     color: $blue!important;
+}
+
+.mav-teal {
+    color: $teal!important;
+}
+.mav-teal-dark {
+    color: $tealDark!important;
+}
+.mav-grad {
+    background: $blue_grad!important;
 }
 
 .mav-spacer {
