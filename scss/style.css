@@ -102,7 +102,7 @@ textarea {
 }
 .mav-heading__h2 {
   font-size: 3.8rem !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   color: #0C073D !important;
   font-family: "TWK Everett", "Arial" !important;
   padding-bottom: 10px;
@@ -657,6 +657,7 @@ textarea {
 .mav-hero {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 .mav-hero__img {
   width: 100%;
@@ -665,6 +666,12 @@ textarea {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.mav-hero__circle {
+  position: absolute;
+  top: 50%;
+  right: -100px;
+  transform: translateY(-50%);
 }
 .mav-hero__logo-overlay {
   position: absolute;

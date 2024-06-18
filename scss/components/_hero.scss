@@ -2,12 +2,20 @@
 .mav-hero {
     width: 100%;
     position: relative;
+    overflow: hidden;
     &__img {
         width: 100%;
         img {
             width: 100%;
             object-fit: cover;
         }
+    }
+    &__circle {
+        position: absolute;
+        top:50%;
+        right:-100px;
+        transform: translateY(-50%);
+        
     }
     &__logo-overlay {
         position: absolute;
