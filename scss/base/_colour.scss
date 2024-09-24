@@ -1,0 +1,27 @@
+
+.mav {
+    &__white {
+        color: white!important;
+    }
+    &__grey {
+        color: $grey!important;
+    }
+    &__blue {
+        color: $blue!important;
+    }
+    &__teal {
+        color: $teal!important;
+    }
+    &__teal-dark {
+        color: $tealDark!important;
+    }
+    &__white {
+        color: white!important;
+    }
+} 
+
+.mav-bg {
+    &__grad {
+        background: $blue_grad!important;
+    }
+}

@@ -96,6 +96,7 @@ textarea {
   font-size: 4rem !important;
   font-weight: 600 !important;
   font-family: "TWK Everett", "Arial" !important;
+  line-height: 1.2;
 }
 .mav-heading__h1.mav-bold {
   font-weight: 600 !important;
@@ -120,6 +121,7 @@ textarea {
   font-weight: 300 !important;
   color: #0C073D !important;
   font-family: "TWK Everett", "Arial" !important;
+  line-height: 1.2;
 }
 .mav-heading__h3.mav-bold {
   font-weight: 600 !important;
@@ -149,6 +151,12 @@ textarea {
 }
 .mav-body-p.small {
   font-size: 1.6rem !important;
+}
+.mav-body-p.lrg {
+  font-size: 2.2rem !important;
+}
+.mav-body-p.no-margin {
+  padding: 0 !important;
 }
 
 .mav-white {
@@ -187,6 +195,49 @@ textarea {
   background-color: #0B2036;
 }
 
+.mav__300 {
+  font-weight: 300 !important;
+}
+.mav__400 {
+  font-weight: 400 !important;
+}
+.mav__500 {
+  font-weight: 500 !important;
+}
+.mav__600 {
+  font-weight: 600 !important;
+}
+
+.mav__white {
+  color: white !important;
+}
+.mav__grey {
+  color: #575757 !important;
+}
+.mav__blue {
+  color: #337EB5 !important;
+}
+.mav__teal {
+  color: #114E50 !important;
+}
+.mav__teal-dark {
+  color: #08292B !important;
+}
+.mav__white {
+  color: white !important;
+}
+
+.mav-bg__grad {
+  background: linear-gradient(146deg, rgb(30, 181, 209) 19%, rgb(29, 176, 203) 31%, rgb(27, 163, 186) 46%, rgb(24, 141, 159) 63%, rgb(21, 111, 121) 82%, rgb(17, 78, 80) 100%) !important;
+}
+
+.mav-max-width {
+  max-width: 1500px;
+  width: 100%;
+  padding-inline: 25px;
+  margin: 0 auto;
+}
+
 .home-page {
   width: 100%;
   height: 100vh;
@@ -599,6 +650,676 @@ textarea {
 }
 .mav-contact .mav-body-p:hover {
   color: #337EB5;
+}
+
+.mav-teams {
+  max-width: 100%;
+  overflow: clip;
+  background: white;
+}
+.mav-teams .mav-larger-text {
+  font-size: 1.7em;
+}
+.mav-teams .mav-heading__h1 {
+  font-size: 67px !important;
+  font-weight: 400 !important;
+  font-family: "TWK Everett", "Arial" !important;
+  line-height: 1;
+  color: #08292B !important;
+}
+.mav-teams .mav-heading__h1.mav-bold {
+  font-weight: 600 !important;
+}
+.mav-teams .mav-heading__h2 {
+  font-size: 3.8rem !important;
+  font-weight: 600 !important;
+  font-family: "TWK Everett", "Arial" !important;
+  padding-bottom: 10px;
+  color: #08292B !important;
+}
+.mav-teams .mav-heading__h2.mav-center {
+  max-width: 950px;
+  margin-inline: auto;
+  text-align: center;
+}
+.mav-teams .mav-heading__h2.mav-bold {
+  font-weight: 600 !important;
+}
+.mav-teams .mav-heading__h3 {
+  font-size: 36px !important;
+  font-weight: 300 !important;
+  font-family: "TWK Everett", "Arial" !important;
+  line-height: 1.2;
+  color: #08292B !important;
+}
+.mav-teams .mav-heading__h3.mav-bold {
+  font-weight: 600 !important;
+}
+.mav-teams .mav-heading__h4 {
+  font-size: 2.8rem !important;
+  font-weight: 300 !important;
+  font-family: "TWK Everett", "Arial" !important;
+  line-height: 1.3;
+  color: #08292B !important;
+}
+.mav-teams .mav-heading__h4.mav-bold {
+  font-weight: 600 !important;
+}
+.mav-teams .mav-body-p {
+  color: black;
+}
+.mav-teams .mav__white {
+  color: white !important;
+}
+.mav-teams .mav__grey {
+  color: #575757 !important;
+}
+.mav-teams .mav__blue {
+  color: #337EB5 !important;
+}
+.mav-teams .mav__teal {
+  color: #114E50 !important;
+}
+.mav-teams .mav__teal-dark {
+  color: #08292B !important;
+}
+.mav-teams .mav__white {
+  color: white !important;
+}
+.mav-teams .mav-bold {
+  font-weight: 600 !important;
+}
+.mav-teams .mav-line {
+  width: 200vw;
+  height: 1px;
+  margin-left: -50vw;
+  margin-block: 10px;
+}
+.mav-teams .mav-line.white {
+  background-color: #ffffff;
+}
+.mav-teams .mav-line.teal {
+  background-color: #114E50;
+}
+.mav-teams__list {
+  margin-top: 50px;
+}
+.mav-teams__list li {
+  font-size: 80px;
+  color: #08292B;
+  max-width: 400px;
+  display: flex;
+  gap: 15px;
+  margin-block: 22px;
+}
+.mav-teams__list li span {
+  min-width: 70px;
+}
+.mav-teams__table {
+  margin-top: 50px;
+}
+.mav-teams__table-row {
+  border-top: 1px #08292B solid;
+  padding-block: 15px;
+  display: flex;
+}
+.mav-teams__table-row:hover .mav-teams__arrow {
+  margin-right: 0;
+}
+.mav-teams__table-row.white {
+  border-color: #ffffff;
+}
+.mav-teams__table-row .mav-teams__arrow {
+  margin-left: auto;
+  margin-right: 25px;
+  transition: 0.2s ease;
+}
+.mav-teams__action {
+  position: relative;
+  z-index: 9;
+  margin-inline: auto;
+  margin-top: 25px;
+}
+.mav-teams__action-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.mav-teams__action-btn span {
+  width: 50px;
+  height: 50px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+}
+.mav-teams__action-arrow {
+  width: 50px;
+  height: 50px;
+}
+.mav-teams .mav-section {
+  padding-block: 50px;
+  position: relative;
+}
+.mav-teams .mav-section__bg-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mav-teams .mav-section__bg-grad {
+  background: linear-gradient(180deg, #14BED4 0%, #114E50 100%);
+}
+.mav-teams .mav-section__banner {
+  min-height: 400px;
+}
+.mav-teams ul, .mav-teams ol {
+  list-style: inside;
+}
+
+.mav-header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 15 25px;
+  z-index: 9;
+}
+.mav-header__logo {
+  width: 200px;
+}
+
+.mav-hero {
+  position: relative;
+  height: 800px;
+}
+.mav-hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.mav-hero__inner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: 25px;
+}
+.mav-hero__inner-content {
+  max-width: 500px;
+  margin-block: auto;
+}
+
+.mav-scenarios {
+  padding-bottom: 150px !important;
+  min-height: 100vh;
+}
+.mav-scenarios__header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.mav-scenarios__header-heads {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+.mav-scenarios__header-head {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: white;
+}
+.mav-scenarios__info {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+.mav-scenarios__info svg {
+  width: 28px;
+  margin-right: 6px;
+}
+.mav-scenarios__info.show {
+  opacity: 1;
+}
+.mav-scenarios__wrapper {
+  position: relative;
+}
+.mav-scenarios__carousel {
+  position: relative;
+  visibility: visible !important;
+  margin-top: 50px;
+}
+.mav-scenarios__carousel .splide__track {
+  overflow: visible !important;
+  transition: opacity 0.5s ease, transform 0.6s ease;
+  transition-delay: 0.2s;
+}
+.mav-scenarios .mav-scenario {
+  width: 100%;
+  opacity: 0.4;
+  transition: opacity 0.4s ease-in;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: clip;
+}
+.mav-scenarios .mav-scenario.is-active {
+  opacity: 1;
+}
+.mav-scenarios .mav-scenario.is-active:hover .mav-scenario__btn {
+  transform: translateY(-15px);
+  opacity: 1;
+}
+.mav-scenarios .mav-scenario__img {
+  position: relative;
+  width: 100%;
+}
+.mav-scenarios .mav-scenario__img img {
+  width: 100%;
+}
+.mav-scenarios .mav-scenario__name {
+  text-align: left;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+.mav-scenarios .mav-scenario__btn {
+  background: #F4F4F2;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin-inline: auto;
+  margin-top: 25px;
+  transition: transform 0.2s ease, opacity 0.3s ease-in, border 0.2s ease;
+  opacity: 0;
+  transform: translateY(80px);
+  border: 1px #F4F4F2 solid;
+  cursor: pointer;
+}
+.mav-scenarios .mav-scenario__btn:hover {
+  border: 1px #575757 solid;
+}
+.mav-scenarios .mav-scenario__hotspot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px #1EB5D1 solid;
+  background: #ffffff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.6s ease;
+  cursor: pointer;
+}
+.mav-scenarios .mav-scenario__hotspot:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px #1EB5D1 solid;
+  animation: pulsate 2s ease infinite;
+  animation-delay: 0.5s;
+}
+.mav-scenarios .mav-scenario__hotspot:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px #1EB5D1 solid;
+  animation: pulsate 2s ease infinite;
+}
+.mav-scenarios .mav-scenario__selected {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  opacity: 1;
+  margin-top: 50px;
+  padding-inline: 20%;
+}
+.mav-scenarios .mav-scenario__spotlight {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  z-index: -1;
+  transition: padding 0.6s ease, opacity 0s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-delay: 1s;
+  transition-property: visibility, z-index, opacity;
+  overflow: visible;
+}
+.mav-scenarios .mav-scenario__spotlight-name {
+  opacity: 0;
+}
+.mav-scenarios .mav-scenario__spotlight .mav-scenario__img {
+  width: 60%;
+  transition: 0.3s ease;
+}
+.mav-scenarios .mav-scenario__spotlight-back-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  cursor: pointer;
+}
+.mav-scenarios .mav-scenario__spotlight-back-btn svg {
+  margin-right: 10px;
+  transition: 0.2s ease;
+}
+.mav-scenarios .mav-scenario__spotlight-back-btn:hover svg {
+  transform: rotate(-90deg);
+}
+.mav-scenarios .mav-scenario__spotlight video {
+  width: 100%;
+  outline: 4px solid white;
+  outline-offset: -4px;
+  -webkit-clip-path: inset(1px 1px);
+          clip-path: inset(1px 1px);
+}
+.mav-scenarios .mav-scenario__spotlight video:active {
+  cursor: grabbing;
+}
+.mav-scenarios .mav-scenario__spotlight-elm {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.mav-scenarios__selected .splide__track, .mav-scenarios__selected .splide__arrows {
+  opacity: 0;
+}
+.mav-scenarios__selected .splide__track {
+  transform: scale(0.9);
+}
+.mav-scenarios__selected .mav-scenario__spotlight {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+  transition-property: opacity;
+}
+.mav-scenarios__selected .mav-scenario__spotlight .mav-scenario__img {
+  width: 90%;
+}
+.mav-scenarios__selected .mav-scenario__spotlight-elm {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.mav-scenarios__modal, .mav-scenarios__hotspot-modal {
+  width: 100vw;
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(8.8px);
+          backdrop-filter: blur(8.8px);
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: top 0.4s ease, left 0.4s ease, transform 0.4s ease, opacity 0.3s ease-out;
+}
+.mav-scenarios__modal.show, .mav-scenarios__hotspot-modal.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+.mav-scenarios__modal.slide-and-hide, .mav-scenarios__hotspot-modal.slide-and-hide {
+  transform: translate(100%, -50%);
+  opacity: 0;
+  transition: transform 0.6s ease-in, opacity 0.3s ease;
+}
+.mav-scenarios__modal-inner, .mav-scenarios__hotspot-modal-inner {
+  display: flex;
+  padding: 35px;
+}
+.mav-scenarios__modal-content, .mav-scenarios__hotspot-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.mav-scenarios__modal-cols, .mav-scenarios__hotspot-modal-cols {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+}
+@media (min-width: 900px) {
+  .mav-scenarios__modal-cols, .mav-scenarios__hotspot-modal-cols {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+.mav-scenarios__modal-logos, .mav-scenarios__hotspot-modal-logos {
+  display: flex;
+  gap: 30px;
+  padding-top: 25px;
+}
+.mav-scenarios__modal-logos img, .mav-scenarios__hotspot-modal-logos img {
+  height: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.mav-scenarios__modal-room, .mav-scenarios__hotspot-modal-room {
+  min-width: 100%;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+}
+.mav-scenarios__modal-close, .mav-scenarios__hotspot-modal-close {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 15px;
+  right: 65px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 900px) {
+  .mav-scenarios__modal-close, .mav-scenarios__hotspot-modal-close {
+    top: 25;
+    right: 25px;
+  }
+}
+.mav-scenarios__modal-close svg, .mav-scenarios__hotspot-modal-close svg {
+  width: 40%;
+}
+.mav-scenarios__modal-col, .mav-scenarios__hotspot-modal-col {
+  width: 100%;
+}
+.mav-scenarios__modal-col-imgs, .mav-scenarios__hotspot-modal-col-imgs {
+  display: grid;
+  grid-template: 1fr;
+  gap: 15px;
+}
+.mav-scenarios__modal-col p, .mav-scenarios__hotspot-modal-col p {
+  padding-top: 0 !important;
+}
+.mav-scenarios__modal .mav-additional-heading, .mav-scenarios__hotspot-modal .mav-additional-heading {
+  border-bottom: 1px #114E50 solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.mav-scenarios__modal-image, .mav-scenarios__hotspot-modal-image {
+  width: 100%;
+  height: 100%;
+}
+.mav-scenarios__modal ul, .mav-scenarios__hotspot-modal ul {
+  list-style-type: disc !important;
+}
+.mav-scenarios__modal ul li, .mav-scenarios__hotspot-modal ul li {
+  list-style-type: disc !important;
+  padding-block: 5px !important;
+}
+.mav-scenarios__modal-btn, .mav-scenarios__hotspot-modal-btn {
+  background: #D9D9D9;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #114E50;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 1px #D9D9D9 solid;
+  transition: border 0.2s ease;
+}
+.mav-scenarios__modal-btn svg, .mav-scenarios__hotspot-modal-btn svg {
+  width: 12px;
+  margin-left: 10px;
+}
+.mav-scenarios__modal-btn:hover, .mav-scenarios__hotspot-modal-btn:hover {
+  border: 1px #575757 solid;
+}
+.mav-scenarios__nav-btn {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  z-index: 9;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.mav-scenarios__nav-btn-prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+.mav-scenarios__nav-btn-prev svg {
+  transform: rotate(0);
+}
+.mav-scenarios__nav-btn-next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
+.mav-scenarios__nav-btn-next svg {
+  transform: rotate(-180deg);
+}
+.mav-scenarios__nav-btn svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes stop-pulsate {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.mav-grid {
+  display: grid;
+  gap: 25px;
+  margin-block: 25px;
+}
+.mav-grid__3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.mav-grid__4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.mav-grid__70w {
+  width: 70%;
+  margin-left: auto;
+}
+
+.mav-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.mav-col.center {
+  align-items: center;
+  justify-content: center;
+}
+.mav-col__arrow {
+  margin-right: auto;
+  transition: 0.2s ease;
+}
+.mav-col__image {
+  margin-bottom: 15px;
+}
+.mav-col:hover .mav-col__arrow {
+  margin-left: 15px;
+}
+
+.mav-footer__logo {
+  max-width: 250px;
+}
+
+.mav-placeholder-footer {
+  background-color: #08292B;
+  width: 100%;
+  height: 400px;
+}
+
+.center {
+  text-align: center;
 }
 
 .mav-solutions {
