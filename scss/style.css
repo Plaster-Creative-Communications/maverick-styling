@@ -1210,7 +1210,7 @@ textarea {
   padding-top: 25px;
 }
 .mav-scenarios__modal-logos img, .mav-scenarios__hotspot-modal-logos img {
-  height: 40px;
+  height: 60px;
   width: -moz-fit-content;
   width: fit-content;
 }
