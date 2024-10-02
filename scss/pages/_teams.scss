@@ -57,30 +57,30 @@
         color: black;
     }
     
-.mav {
-    &__white {
-        color: white!important;
-    }
-    &__grey {
-        color: $grey!important;
-    }
-    &__blue {
-        color: $blue!important;
-    }
-    &__teal {
-        color: $teal!important;
-    }
-    &__teal-dark {
-        color: $tealDark!important;
-    }
-    &__white {
-        color: white!important;
-    }
-} 
+    .mav {
+        &__white {
+            color: white!important;
+        }
+        &__grey {
+            color: $grey!important;
+        }
+        &__blue {
+            color: $blue!important;
+        }
+        &__teal {
+            color: $teal!important;
+        }
+        &__teal-dark {
+            color: $tealDark!important;
+        }
+        &__white {
+            color: white!important;
+        }
+    } 
 
-.mav-bold {
-    font-weight: 600!important;
-}
+    .mav-bold {
+        font-weight: 600!important;
+    }
 
     .mav-line {
         width: 200vw;
@@ -265,50 +265,50 @@
 
 
 
-.mav-header {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top:0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    padding: 15 25px;
-    z-index: 9;
-    &__logo {
-        width: 200px;
-    }
-}
-
-.mav-hero {
-    position: relative;
-    height: 800px;
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-    &__inner {
+    .mav-header {
+        display: flex;
+        justify-content: space-between;
         position: absolute;
         top:0;
         left: 50%;
         transform: translateX(-50%);
-        z-index: 2;
         width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        // align-items: center;
-        justify-content: center;
-        padding-block: 25px;
-        &-content {
-            max-width: 500px;
-            margin-block: auto;
+        padding: 15 25px;
+        z-index: 9;
+        &__logo {
+            width: 200px;
         }
     }
- 
-}
+
+    .mav-hero {
+        position: relative;
+        height: 800px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        &__inner {
+            position: absolute;
+            top:0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: center;
+            padding-block: 25px;
+            &-content {
+                max-width: 500px;
+                margin-block: auto;
+            }
+        }
+    
+    }
 
 .mav-scenarios {
     //  overflow:clip;
