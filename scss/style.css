@@ -882,8 +882,7 @@ textarea {
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
 }
-
-.mav-header {
+.mav-teams .mav-header {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -894,15 +893,14 @@ textarea {
   padding: 15 25px;
   z-index: 9;
 }
-.mav-header__logo {
+.mav-teams .mav-header__logo {
   width: 200px;
 }
-
-.mav-hero {
+.mav-teams .mav-hero {
   position: relative;
   height: 800px;
 }
-.mav-hero img {
+.mav-teams .mav-hero img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -910,7 +908,7 @@ textarea {
   -o-object-position: center;
      object-position: center;
 }
-.mav-hero__inner {
+.mav-teams .mav-hero__inner {
   position: absolute;
   top: 0;
   left: 50%;
@@ -923,21 +921,20 @@ textarea {
   justify-content: center;
   padding-block: 25px;
 }
-.mav-hero__inner-content {
+.mav-teams .mav-hero__inner-content {
   max-width: 500px;
   margin-block: auto;
 }
-
-.mav-scenarios {
+.mav-teams .mav-scenarios {
   padding-bottom: 150px !important;
   min-height: 100vh;
 }
-.mav-scenarios__header {
+.mav-teams .mav-scenarios__header {
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.mav-scenarios__header-heads {
+.mav-teams .mav-scenarios__header-heads {
   display: flex;
   gap: 15px;
   position: absolute;
@@ -948,11 +945,11 @@ textarea {
   transition: opacity 0.2s ease;
   z-index: 1;
 }
-.mav-scenarios__header-heads.show {
+.mav-teams .mav-scenarios__header-heads.show {
   opacity: 1;
   visibility: visible;
 }
-.mav-scenarios__header-head {
+.mav-teams .mav-scenarios__header-head {
   width: 75px;
   height: 75px;
   border-radius: 50%;
@@ -963,37 +960,37 @@ textarea {
   transform: scale(0.9);
   transition: border 0.2s ease, scale 0.2s ease;
 }
-.mav-scenarios__header-head.selected {
+.mav-teams .mav-scenarios__header-head.selected {
   border: 3px #1EB5D1 solid;
   transform: scale(1);
 }
-.mav-scenarios__info {
+.mav-teams .mav-scenarios__info {
   display: flex;
   align-items: center;
   opacity: 0;
   transition: 0.2s ease;
 }
-.mav-scenarios__info svg {
+.mav-teams .mav-scenarios__info svg {
   width: 28px;
   margin-right: 6px;
 }
-.mav-scenarios__info.show {
+.mav-teams .mav-scenarios__info.show {
   opacity: 1;
 }
-.mav-scenarios__wrapper {
+.mav-teams .mav-scenarios__wrapper {
   position: relative;
 }
-.mav-scenarios__carousel {
+.mav-teams .mav-scenarios__carousel {
   position: relative;
   visibility: visible !important;
   margin-top: 50px;
 }
-.mav-scenarios__carousel .splide__track {
+.mav-teams .mav-scenarios__carousel .splide__track {
   overflow: visible !important;
   transition: opacity 0.5s ease, transform 0.6s ease;
   transition-delay: 0.2s;
 }
-.mav-scenarios .mav-scenario {
+.mav-teams .mav-scenarios .mav-scenario {
   width: 100%;
   opacity: 0.4;
   transition: opacity 0.4s ease-in;
@@ -1004,26 +1001,26 @@ textarea {
   cursor: pointer;
   overflow: clip;
 }
-.mav-scenarios .mav-scenario.is-active {
+.mav-teams .mav-scenarios .mav-scenario.is-active {
   opacity: 1;
 }
-.mav-scenarios .mav-scenario.is-active:hover .mav-scenario__btn {
+.mav-teams .mav-scenarios .mav-scenario.is-active:hover .mav-scenario__btn {
   transform: translateY(-15px);
   opacity: 1;
 }
-.mav-scenarios .mav-scenario__img {
+.mav-teams .mav-scenarios .mav-scenario__img {
   position: relative;
   width: 100%;
 }
-.mav-scenarios .mav-scenario__img img {
+.mav-teams .mav-scenarios .mav-scenario__img img {
   width: 100%;
 }
-.mav-scenarios .mav-scenario__name {
+.mav-teams .mav-scenarios .mav-scenario__name {
   text-align: left;
   margin-right: auto;
   margin-bottom: 15px;
 }
-.mav-scenarios .mav-scenario__btn {
+.mav-teams .mav-scenarios .mav-scenario__btn {
   background: #F4F4F2;
   border: none;
   outline: none;
@@ -1037,10 +1034,10 @@ textarea {
   border: 1px #F4F4F2 solid;
   cursor: pointer;
 }
-.mav-scenarios .mav-scenario__btn:hover {
+.mav-teams .mav-scenarios .mav-scenario__btn:hover {
   border: 1px #575757 solid;
 }
-.mav-scenarios .mav-scenario__hotspot {
+.mav-teams .mav-scenarios .mav-scenario__hotspot {
   width: 25px;
   height: 25px;
   border-radius: 50%;
@@ -1054,7 +1051,7 @@ textarea {
   transition: 0.2s ease;
   cursor: pointer;
 }
-.mav-scenarios .mav-scenario__hotspot:after {
+.mav-teams .mav-scenarios .mav-scenario__hotspot:after {
   content: "";
   position: absolute;
   display: block;
@@ -1065,7 +1062,7 @@ textarea {
   animation: pulsate 2s ease infinite;
   animation-delay: 0.5s;
 }
-.mav-scenarios .mav-scenario__hotspot:before {
+.mav-teams .mav-scenarios .mav-scenario__hotspot:before {
   content: "";
   position: absolute;
   display: block;
@@ -1075,7 +1072,7 @@ textarea {
   border: 1px #1EB5D1 solid;
   animation: pulsate 2s ease infinite;
 }
-.mav-scenarios .mav-scenario__selected {
+.mav-teams .mav-scenarios .mav-scenario__selected {
   position: absolute;
   top: 0;
   left: 0;
@@ -1084,7 +1081,7 @@ textarea {
   margin-top: 50px;
   padding-inline: 20%;
 }
-.mav-scenarios .mav-scenario__spotlight {
+.mav-teams .mav-scenarios .mav-scenario__spotlight {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1099,14 +1096,14 @@ textarea {
   transition-property: visibility, z-index, opacity;
   overflow: visible;
 }
-.mav-scenarios .mav-scenario__spotlight-name {
+.mav-teams .mav-scenarios .mav-scenario__spotlight-name {
   opacity: 0;
 }
-.mav-scenarios .mav-scenario__spotlight .mav-scenario__img {
+.mav-teams .mav-scenarios .mav-scenario__spotlight .mav-scenario__img {
   width: 60%;
   transition: 0.3s ease;
 }
-.mav-scenarios .mav-scenario__spotlight-back-btn {
+.mav-teams .mav-scenarios .mav-scenario__spotlight-back-btn {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1119,46 +1116,46 @@ textarea {
   margin-right: auto;
   cursor: pointer;
 }
-.mav-scenarios .mav-scenario__spotlight-back-btn svg {
+.mav-teams .mav-scenarios .mav-scenario__spotlight-back-btn svg {
   margin-right: 10px;
   transition: 0.2s ease;
 }
-.mav-scenarios .mav-scenario__spotlight-back-btn:hover svg {
+.mav-teams .mav-scenarios .mav-scenario__spotlight-back-btn:hover svg {
   transform: rotate(-90deg);
 }
-.mav-scenarios .mav-scenario__spotlight video {
+.mav-teams .mav-scenarios .mav-scenario__spotlight video {
   width: 100%;
   outline: 4px solid white;
   outline-offset: -4px;
 }
-.mav-scenarios .mav-scenario__spotlight video:active {
+.mav-teams .mav-scenarios .mav-scenario__spotlight video:active {
   cursor: grabbing;
 }
-.mav-scenarios .mav-scenario__spotlight-elm {
+.mav-teams .mav-scenarios .mav-scenario__spotlight-elm {
   opacity: 0;
   transition: opacity 1s ease;
 }
-.mav-scenarios__selected .splide__track, .mav-scenarios__selected .splide__arrows {
+.mav-teams .mav-scenarios__selected .splide__track, .mav-teams .mav-scenarios__selected .splide__arrows {
   opacity: 0;
 }
-.mav-scenarios__selected .splide__track {
+.mav-teams .mav-scenarios__selected .splide__track {
   transform: scale(0.9);
 }
-.mav-scenarios__selected .mav-scenario__spotlight {
+.mav-teams .mav-scenarios__selected .mav-scenario__spotlight {
   z-index: 0;
   opacity: 1;
   visibility: visible;
   transition-delay: 0s;
   transition-property: opacity;
 }
-.mav-scenarios__selected .mav-scenario__spotlight .mav-scenario__img {
+.mav-teams .mav-scenarios__selected .mav-scenario__spotlight .mav-scenario__img {
   width: 90%;
 }
-.mav-scenarios__selected .mav-scenario__spotlight-elm {
+.mav-teams .mav-scenarios__selected .mav-scenario__spotlight-elm {
   opacity: 1;
   transition: opacity 1s ease;
 }
-.mav-scenarios__modal, .mav-scenarios__hotspot-modal {
+.mav-teams .mav-scenarios__modal, .mav-teams .mav-scenarios__hotspot-modal {
   width: 100vw;
   position: absolute;
   z-index: 999;
@@ -1174,52 +1171,52 @@ textarea {
   transition: top 0.4s ease, left 0.4s ease, transform 0.4s ease, opacity 0.3s ease-out;
   visibility: visible;
 }
-.mav-scenarios__modal.show, .mav-scenarios__hotspot-modal.show {
+.mav-teams .mav-scenarios__modal.show, .mav-teams .mav-scenarios__hotspot-modal.show {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
-.mav-scenarios__modal.slide-and-hide, .mav-scenarios__hotspot-modal.slide-and-hide {
+.mav-teams .mav-scenarios__modal.slide-and-hide, .mav-teams .mav-scenarios__hotspot-modal.slide-and-hide {
   transform: translate(100%, -50%);
   opacity: 0;
   transition: transform 0.6s ease-in, opacity 0.3s ease;
 }
-.mav-scenarios__modal-inner, .mav-scenarios__hotspot-modal-inner {
+.mav-teams .mav-scenarios__modal-inner, .mav-teams .mav-scenarios__hotspot-modal-inner {
   display: flex;
   padding: 35px;
 }
-.mav-scenarios__modal-content, .mav-scenarios__hotspot-modal-content {
+.mav-teams .mav-scenarios__modal-content, .mav-teams .mav-scenarios__hotspot-modal-content {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
-.mav-scenarios__modal-cols, .mav-scenarios__hotspot-modal-cols {
+.mav-teams .mav-scenarios__modal-cols, .mav-teams .mav-scenarios__hotspot-modal-cols {
   display: flex;
   flex-direction: column;
   min-width: 100%;
   transition: transform 0.3s ease, opacity 0.5s ease;
 }
 @media (min-width: 900px) {
-  .mav-scenarios__modal-cols, .mav-scenarios__hotspot-modal-cols {
+  .mav-teams .mav-scenarios__modal-cols, .mav-teams .mav-scenarios__hotspot-modal-cols {
     flex-direction: row;
     gap: 40px;
   }
 }
-.mav-scenarios__modal-logos, .mav-scenarios__hotspot-modal-logos {
+.mav-teams .mav-scenarios__modal-logos, .mav-teams .mav-scenarios__hotspot-modal-logos {
   display: flex;
   gap: 30px;
   padding-top: 25px;
 }
-.mav-scenarios__modal-logos img, .mav-scenarios__hotspot-modal-logos img {
+.mav-teams .mav-scenarios__modal-logos img, .mav-teams .mav-scenarios__hotspot-modal-logos img {
   height: 60px;
   width: -moz-fit-content;
   width: fit-content;
 }
-.mav-scenarios__modal-room, .mav-scenarios__hotspot-modal-room {
+.mav-teams .mav-scenarios__modal-room, .mav-teams .mav-scenarios__hotspot-modal-room {
   min-width: 100%;
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.5s ease;
 }
-.mav-scenarios__modal-close, .mav-scenarios__hotspot-modal-close {
+.mav-teams .mav-scenarios__modal-close, .mav-teams .mav-scenarios__hotspot-modal-close {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1237,45 +1234,45 @@ textarea {
   justify-content: center;
 }
 @media (min-width: 900px) {
-  .mav-scenarios__modal-close, .mav-scenarios__hotspot-modal-close {
+  .mav-teams .mav-scenarios__modal-close, .mav-teams .mav-scenarios__hotspot-modal-close {
     top: 25;
     right: 25px;
   }
 }
-.mav-scenarios__modal-close svg, .mav-scenarios__hotspot-modal-close svg {
+.mav-teams .mav-scenarios__modal-close svg, .mav-teams .mav-scenarios__hotspot-modal-close svg {
   width: 40%;
 }
-.mav-scenarios__modal-col, .mav-scenarios__hotspot-modal-col {
+.mav-teams .mav-scenarios__modal-col, .mav-teams .mav-scenarios__hotspot-modal-col {
   width: 100%;
 }
-.mav-scenarios__modal-col .mav-scenarios__story-title, .mav-scenarios__hotspot-modal-col .mav-scenarios__story-title {
+.mav-teams .mav-scenarios__modal-col .mav-scenarios__story-title, .mav-teams .mav-scenarios__hotspot-modal-col .mav-scenarios__story-title {
   margin-bottom: 15px;
 }
-.mav-scenarios__modal-col-imgs, .mav-scenarios__hotspot-modal-col-imgs {
+.mav-teams .mav-scenarios__modal-col-imgs, .mav-teams .mav-scenarios__hotspot-modal-col-imgs {
   display: grid;
   grid-template: 1fr;
   gap: 15px;
 }
-.mav-scenarios__modal-col p, .mav-scenarios__hotspot-modal-col p {
+.mav-teams .mav-scenarios__modal-col p, .mav-teams .mav-scenarios__hotspot-modal-col p {
   padding-top: 0 !important;
 }
-.mav-scenarios__modal .mav-additional-heading, .mav-scenarios__hotspot-modal .mav-additional-heading {
+.mav-teams .mav-scenarios__modal .mav-additional-heading, .mav-teams .mav-scenarios__hotspot-modal .mav-additional-heading {
   border-bottom: 1px #114E50 solid;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-.mav-scenarios__modal-image, .mav-scenarios__hotspot-modal-image {
+.mav-teams .mav-scenarios__modal-image, .mav-teams .mav-scenarios__hotspot-modal-image {
   width: 100%;
   height: 100%;
 }
-.mav-scenarios__modal ul, .mav-scenarios__hotspot-modal ul {
+.mav-teams .mav-scenarios__modal ul, .mav-teams .mav-scenarios__hotspot-modal ul {
   list-style-type: disc !important;
 }
-.mav-scenarios__modal ul li, .mav-scenarios__hotspot-modal ul li {
+.mav-teams .mav-scenarios__modal ul li, .mav-teams .mav-scenarios__hotspot-modal ul li {
   list-style-type: disc !important;
   padding-block: 5px !important;
 }
-.mav-scenarios__modal-btn, .mav-scenarios__hotspot-modal-btn {
+.mav-teams .mav-scenarios__modal-btn, .mav-teams .mav-scenarios__hotspot-modal-btn {
   background: #D9D9D9;
   border: none;
   border-radius: 25px;
@@ -1290,14 +1287,14 @@ textarea {
   border: 1px #D9D9D9 solid;
   transition: border 0.2s ease;
 }
-.mav-scenarios__modal-btn svg, .mav-scenarios__hotspot-modal-btn svg {
+.mav-teams .mav-scenarios__modal-btn svg, .mav-teams .mav-scenarios__hotspot-modal-btn svg {
   width: 12px;
   margin-left: 10px;
 }
-.mav-scenarios__modal-btn:hover, .mav-scenarios__hotspot-modal-btn:hover {
+.mav-teams .mav-scenarios__modal-btn:hover, .mav-teams .mav-scenarios__hotspot-modal-btn:hover {
   border: 1px #575757 solid;
 }
-.mav-scenarios__nav-btn {
+.mav-teams .mav-scenarios__nav-btn {
   width: 50px;
   height: 50px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
@@ -1311,29 +1308,28 @@ textarea {
   transition: 0.2s ease;
   cursor: pointer;
 }
-.mav-scenarios__nav-btn-prev {
+.mav-teams .mav-scenarios__nav-btn-prev {
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
 }
-.mav-scenarios__nav-btn-prev svg {
+.mav-teams .mav-scenarios__nav-btn-prev svg {
   transform: rotate(0);
 }
-.mav-scenarios__nav-btn-next {
+.mav-teams .mav-scenarios__nav-btn-next {
   position: absolute;
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
 }
-.mav-scenarios__nav-btn-next svg {
+.mav-teams .mav-scenarios__nav-btn-next svg {
   transform: rotate(-180deg);
 }
-.mav-scenarios__nav-btn svg {
+.mav-teams .mav-scenarios__nav-btn svg {
   width: 100%;
   height: 100%;
 }
-
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -1353,53 +1349,49 @@ textarea {
     opacity: 0;
   }
 }
-.mav-grid {
+.mav-teams .mav-grid {
   display: grid;
   gap: 25px;
   margin-block: 25px;
 }
-.mav-grid__3-cols {
+.mav-teams .mav-grid__3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
-.mav-grid__4-cols {
+.mav-teams .mav-grid__4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-.mav-grid__70w {
+.mav-teams .mav-grid__70w {
   width: 70%;
   margin-left: auto;
 }
-
-.mav-col {
+.mav-teams .mav-col {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-.mav-col.center {
+.mav-teams .mav-col.center {
   align-items: center;
   justify-content: center;
 }
-.mav-col__arrow {
+.mav-teams .mav-col__arrow {
   margin-right: auto;
   transition: 0.2s ease;
 }
-.mav-col__image {
+.mav-teams .mav-col__image {
   margin-bottom: 15px;
 }
-.mav-col:hover .mav-col__arrow {
+.mav-teams .mav-col:hover .mav-col__arrow {
   margin-left: 15px;
 }
-
-.mav-footer__logo {
+.mav-teams .mav-footer__logo {
   max-width: 250px;
 }
-
-.mav-placeholder-footer {
+.mav-teams .mav-placeholder-footer {
   background-color: #08292B;
   width: 100%;
   height: 400px;
 }
-
-.center {
+.mav-teams .center {
   text-align: center;
 }
 
