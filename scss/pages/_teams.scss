@@ -78,6 +78,7 @@
     }
 } 
 
+
 .mav-bold {
     font-weight: 600!important;
 }
@@ -168,6 +169,7 @@
     .mav-section {
         padding-block: 50px;
         position: relative;
+        overflow: clip;
         &__inner {
             position: relative;
         }
@@ -262,8 +264,33 @@
      
         }
     }
+
+
+  
 }
 
+.mav-img__bg {
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    &-overlay {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,48,49, .42);
+            z-index: 0;
+        }
+    }
+
+}
 
 .mav-header {
     display: flex;
@@ -311,10 +338,9 @@
 }
 
 .mav-scenarios {
-    //  overflow:clip;
-    //  padding-inline:unset;
+    overflow: visible!important;
     padding-bottom: 150px!important;
-    min-height:100vh;
+    // min-height:100vh;
     &__header {
         display: flex;
         flex-direction: column;
