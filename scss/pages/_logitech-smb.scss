@@ -98,7 +98,8 @@
     &__gondala {
         margin-bottom: 50px;
         width: calc(100% + 100px);
-        transform: translateX(-50px)
+        margin-left: -50px;
+        margin-top: - 100px;
     }
     &-heading {
         &__underline {
@@ -224,8 +225,11 @@
     &__skiing-man {
         width: 700px;    
         margin-left: 20%;    
-        margin-top:-200px;
-        margin-bottom: 50px;
+        // margin-top:-900px;
+        // margin-bottom: 900px;
+
+        position: absolute;
+        top:-520px;
     }
     &__underline {
          border-bottom: 1px #6ABFEA solid;
@@ -243,5 +247,8 @@
     &__mountain-range-btm {
         width: calc(100% + 100px);
         transform: translateX(-50px)
+    }
+    &__pad-top {
+        padding-top: 400px;
     }
 }
