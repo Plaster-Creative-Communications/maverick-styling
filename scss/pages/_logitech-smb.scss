@@ -97,6 +97,8 @@
     }
     &__gondala {
         margin-bottom: 50px;
+        width: calc(100% + 100px);
+        transform: translateX(-50px)
     }
     &-heading {
         &__underline {

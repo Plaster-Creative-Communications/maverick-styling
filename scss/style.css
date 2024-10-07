@@ -787,6 +787,8 @@ textarea {
 }
 .logi-smb__gondala {
   margin-bottom: 50px;
+  width: calc(100% + 100px);
+  transform: translateX(-50px);
 }
 .logi-smb-heading__underline {
   margin-bottom: 50px;
