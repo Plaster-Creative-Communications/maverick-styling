@@ -167,6 +167,7 @@
     }
     
     .mav-section {
+        padding-inline: 0;
         padding-block: 50px;
         position: relative;
         overflow: clip;
@@ -265,28 +266,7 @@
         }
     }
 
-    .mav-img__bg {
-        position:absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-        &-overlay {
-            &:after {
-                content: '';
-                position: absolute;
-                top: 0;
-                left:0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0,48,49, .42);
-                z-index: 0;
-            }
-        }
-    
-    }
+   
     
     .mav-header {
         display: flex;
@@ -900,3 +880,26 @@
   
 }
 
+
+.mav-img__bg {
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    &-overlay {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,48,49, .42);
+            z-index: 0;
+        }
+    }
+
+}
