@@ -802,6 +802,7 @@ textarea {
   height: 50px;
 }
 .mav-teams .mav-section {
+  padding-inline: 0;
   padding-block: 50px;
   position: relative;
   overflow: clip;
@@ -882,26 +883,6 @@ textarea {
   opacity: 1;
   visibility: visible;
   transform: translate(-50%, -50%) scale(1);
-}
-.mav-teams .mav-img__bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-}
-.mav-teams .mav-img__bg-overlay:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 48, 49, 0.42);
-  z-index: 0;
 }
 .mav-teams .mav-header {
   display: flex;
@@ -1414,6 +1395,27 @@ textarea {
 }
 .mav-teams .center {
   text-align: center;
+}
+
+.mav-img__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.mav-img__bg-overlay:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 48, 49, 0.42);
+  z-index: 0;
 }
 
 .mav-solutions {
