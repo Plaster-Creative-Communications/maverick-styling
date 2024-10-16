@@ -27,13 +27,14 @@
     &__hero {
         background: rgb(255,255,255);
         background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(216,241,250,1) 17%, rgba(136,211,240,1) 45%, rgba(77,190,233,1) 71%, rgba(40,177,228,1) 90%, rgba(27,172,227,1) 100%);
-        height: 700px;
+        // height: 700px;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         // justify-content: center;
         padding-top: 90px;
+        padding-bottom: 30px;
         &:after {
             content: "";
             position: absolute;
@@ -94,6 +95,18 @@
             }
     
         }
+    }
+    &__button {
+        display: block;
+        background: black;
+        color: white!important;
+        padding: 15px 30px;
+        position: relative;
+        z-index: 99;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 4px;
+        margin-top: 5px;
     }
     &__gondala {
         margin-bottom: 50px;
