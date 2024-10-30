@@ -832,7 +832,8 @@ textarea {
   min-height: 400px;
 }
 .mav-teams ul, .mav-teams ol {
-  list-style: inside;
+  padding-left: 15px;
+  list-style-type: disc;
 }
 .mav-teams__team-modal {
   position: absolute;
@@ -1014,7 +1015,7 @@ textarea {
   position: relative;
   width: 100%;
 }
-.mav-teams .mav-scenarios .mav-scenario__img img {
+.mav-teams .mav-scenarios .mav-scenario__img img, .mav-teams .mav-scenarios .mav-scenario__img video {
   width: 100%;
 }
 .mav-teams .mav-scenarios .mav-scenario__name {
@@ -1083,78 +1084,8 @@ textarea {
   margin-top: 50px;
   padding-inline: 20%;
 }
-.mav-teams .mav-scenarios .mav-scenario__spotlight {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  visibility: hidden;
-  z-index: -1;
-  transition: padding 0.6s ease, opacity 0s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-delay: 1s;
-  transition-property: visibility, z-index, opacity;
-  overflow: visible;
-}
-.mav-teams .mav-scenarios .mav-scenario__spotlight-name {
-  opacity: 0;
-}
-.mav-teams .mav-scenarios .mav-scenario__spotlight .mav-scenario__img {
-  width: 60%;
-  transition: 0.3s ease;
-}
-.mav-teams .mav-scenarios .mav-scenario__spotlight-back-btn {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: none;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-right: auto;
-  cursor: pointer;
-}
-.mav-teams .mav-scenarios .mav-scenario__spotlight-back-btn svg {
-  margin-right: 10px;
-  transition: 0.2s ease;
-}
-.mav-teams .mav-scenarios .mav-scenario__spotlight-back-btn:hover svg {
-  transform: rotate(-90deg);
-}
-.mav-teams .mav-scenarios .mav-scenario__spotlight video {
-  width: 100%;
-  outline: 4px solid white;
-  outline-offset: -4px;
-}
-.mav-teams .mav-scenarios .mav-scenario__spotlight video:active {
-  cursor: grabbing;
-}
 .mav-teams .mav-scenarios .mav-scenario__spotlight-elm {
   opacity: 0;
-  transition: opacity 1s ease;
-}
-.mav-teams .mav-scenarios__selected .splide__track, .mav-teams .mav-scenarios__selected .splide__arrows {
-  opacity: 0;
-}
-.mav-teams .mav-scenarios__selected .splide__track {
-  transform: scale(0.9);
-}
-.mav-teams .mav-scenarios__selected .mav-scenario__spotlight {
-  z-index: 0;
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0s;
-  transition-property: opacity;
-}
-.mav-teams .mav-scenarios__selected .mav-scenario__spotlight .mav-scenario__img {
-  width: 90%;
-}
-.mav-teams .mav-scenarios__selected .mav-scenario__spotlight-elm {
-  opacity: 1;
   transition: opacity 1s ease;
 }
 .mav-teams .mav-scenarios__modal, .mav-teams .mav-scenarios__hotspot-modal {
@@ -1196,6 +1127,7 @@ textarea {
   flex-direction: column;
   min-width: 100%;
   transition: transform 0.3s ease, opacity 0.5s ease;
+  max-height: 300px;
 }
 @media (min-width: 900px) {
   .mav-teams .mav-scenarios__modal-cols, .mav-teams .mav-scenarios__hotspot-modal-cols {
@@ -1205,6 +1137,7 @@ textarea {
 }
 .mav-teams .mav-scenarios__modal-logos, .mav-teams .mav-scenarios__hotspot-modal-logos {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   padding-top: 25px;
 }
@@ -1254,9 +1187,16 @@ textarea {
   display: grid;
   grid-template: 1fr;
   gap: 15px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .mav-teams .mav-scenarios__modal-col p, .mav-teams .mav-scenarios__hotspot-modal-col p {
   padding-top: 0 !important;
+  font-size: 1.6rem !important;
+}
+.mav-teams .mav-scenarios__modal-col li, .mav-teams .mav-scenarios__hotspot-modal-col li {
+  font-size: 1.6rem !important;
+  padding-block: 0px !important;
 }
 .mav-teams .mav-scenarios__modal .mav-additional-heading, .mav-teams .mav-scenarios__hotspot-modal .mav-additional-heading {
   border-bottom: 1px #114E50 solid;
@@ -1332,25 +1272,6 @@ textarea {
   width: 100%;
   height: 100%;
 }
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-@keyframes stop-pulsate {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    transform: scale(2);
-    opacity: 0;
-  }
-}
 .mav-teams .mav-grid {
   display: grid;
   gap: 25px;
@@ -1396,6 +1317,382 @@ textarea {
 .mav-teams .center {
   text-align: center;
 }
+.mav-teams__scenarios {
+  margin-bottom: 50px;
+}
+.mav-teams__scenarios-header {
+  display: flex;
+  position: relative;
+}
+.mav-teams__scenarios-header-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.mav-teams__scenarios-header-line {
+  width: 100vw;
+  height: 1px;
+  background: #003031;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.mav-teams__scenarios-head-nav {
+  display: flex;
+  gap: 5px;
+  margin-left: auto;
+  position: relative;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease;
+}
+.mav-teams__scenarios-head-nav.show {
+  visibility: visible;
+  opacity: 1;
+}
+.mav-teams__scenarios-head-nav-head {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: scale(0.85);
+  transition: 0.2s ease;
+  cursor: pointer;
+  background: white;
+  position: relative;
+}
+.mav-teams__scenarios-head-nav-head.selected {
+  border: 3px #1EB5D1 solid;
+  transform: scale(1);
+}
+.mav-teams__scenarios-head-nav-head:nth-of-type(1):before {
+  animation-delay: 0s;
+}
+.mav-teams__scenarios-head-nav-head:nth-of-type(2):before {
+  animation-delay: 1s;
+}
+.mav-teams__scenarios-head-nav-head:nth-of-type(3):before {
+  animation-delay: 2s;
+}
+.mav-teams__scenarios-head-nav-head:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px #1EB5D1 solid;
+}
+.mav-teams__scenarios-wrapper {
+  position: relative;
+}
+.mav-teams__scenarios-carousel.selected .splide__track {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.7);
+}
+.mav-teams__scenarios-carousel.selected .splide__arrows {
+  opacity: 0;
+}
+.mav-teams__scenarios-carousel .splide__track {
+  overflow: visible !important;
+  transition: opacity 0.2s ease, transform 0.4s ease;
+}
+.mav-teams__scenarios-carousel .splide__list, .mav-teams__scenarios-carousel .splide__slide {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.mav-teams__scenarios-room {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  transition-property: opacity, visibility;
+}
+.mav-teams__scenarios-room.show {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s, 0s;
+  transition-property: opacity, visibility;
+}
+.mav-teams__scenarios-room-model {
+  width: 80%;
+  height: 100%;
+  position: relative;
+}
+.mav-teams__scenarios-room-model video {
+  width: 100%;
+  height: 100%;
+}
+.mav-teams__scenarios-room-back-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  cursor: pointer;
+}
+.mav-teams__scenarios-room-back-btn svg {
+  margin-right: 10px;
+  transition: 0.2s ease;
+}
+.mav-teams__scenarios-room-back-btn:hover svg {
+  transform: rotate(-90deg);
+}
+.mav-teams__scenarios-modal {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.18);
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding: 30px;
+  z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+  transform: translateY(-50%) scale(0);
+}
+.mav-teams__scenarios-modal.show {
+  top: 0;
+  transform: translateY(0%) scale(1);
+}
+.mav-teams__scenarios-modal.show .mav-teams__scenarios-modal-inner {
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.mav-teams__scenarios-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 0;
+  background: 0;
+  outline: 0;
+  cursor: pointer;
+  z-index: 9;
+  padding: 5px;
+}
+.mav-teams__scenarios-modal-close svg {
+  width: 80%;
+}
+.mav-teams__scenarios-modal-inner {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+  opacity: 0;
+  transition-delay: 10;
+  transition: 0.3s ease-in-out;
+}
+.mav-teams__scenarios-modal-carousel .splide__arrows {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+}
+.mav-teams__scenarios-modal-carousel .mav-scenarios__nav-btn {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  z-index: 9;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.mav-teams__scenarios-modal-carousel .mav-scenarios__nav-btn-prev {
+  position: relative;
+  top: unset;
+  left: unset;
+  transform: unset;
+}
+.mav-teams__scenarios-modal-carousel .mav-scenarios__nav-btn-prev svg {
+  transform: rotate(0);
+}
+.mav-teams__scenarios-modal-carousel .mav-scenarios__nav-btn-next {
+  position: relative;
+  top: unset;
+  right: unset;
+  transform: unset;
+}
+.mav-teams__scenarios-modal-carousel .mav-scenarios__nav-btn-next svg {
+  transform: rotate(-180deg);
+}
+.mav-teams__scenarios-modal-carousel .mav-scenarios__nav-btn svg {
+  width: 100%;
+  height: 100%;
+}
+.mav-teams__scenarios-modal-carousel.hide {
+  display: none;
+}
+.mav-teams__scenarios-modal-slide {
+  list-style-type: none !important;
+}
+.mav-teams__scenarios-modal-cols {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  margin-top: 10px;
+  max-height: 550px;
+  overflow: auto;
+}
+@media (min-width: 900px) {
+  .mav-teams__scenarios-modal-cols {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+.mav-teams__scenarios-modal-col {
+  width: 100%;
+}
+.mav-teams__scenarios-modal-col-imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 500px;
+}
+.mav-teams__scenarios-modal-col-imgs img {
+  width: 100%;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+.mav-teams__scenarios-modal-col p {
+  padding-top: 0 !important;
+}
+.mav-teams__scenarios-modal-btn {
+  background: #D9D9D9;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #114E50;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 1px #D9D9D9 solid;
+  transition: border 0.2s ease;
+}
+.mav-teams__scenarios-modal-btn svg {
+  width: 12px;
+  margin-left: 10px;
+}
+.mav-teams__scenarios-modal-btn:hover {
+  border: 1px #575757 solid;
+}
+.mav-teams__scenarios-modal-image {
+  width: 100%;
+  height: 100%;
+}
+.mav-teams__scenarios-modal .splide__pagination {
+  position: relative;
+  height: 25px;
+  bottom: unset;
+}
+.mav-teams__scenarios-modal .splide__pagination .splide__pagination__page.is-active {
+  background-color: #14BED4;
+}
+.mav-teams__scenarios-modal-hotspot {
+  display: none;
+}
+.mav-teams__scenarios-modal-hotspot.show {
+  display: block;
+}
+.mav-teams__scenarios-modal .mav-additional-heading {
+  border-bottom: 1px #114E50 solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.mav-teams__scenarios-hotspots {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+  opacity: 1;
+  transition: 1s ease;
+}
+.mav-teams__scenarios-hotspots.hide {
+  opacity: 0;
+}
+.mav-teams__scenarios-hotspot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px #1EB5D1 solid;
+  background: #ffffff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.mav-teams__scenarios-hotspot:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px #1EB5D1 solid;
+  animation: pulsate 2s ease infinite;
+  animation-delay: 0.5s;
+}
+.mav-teams__scenarios-hotspot:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px #1EB5D1 solid;
+  animation: pulsate 2s ease infinite;
+}
+.mav-teams__scenario {
+  cursor: pointer;
+}
+.mav-teams__scenario.is-active .mav-scenario__name {
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+.mav-teams__scenario .mav-scenario__name {
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+.mav-teams .mav-teams__scenario-img video {
+  width: 100%;
+}
 
 .mav-img__bg {
   position: absolute;
@@ -1418,6 +1715,25 @@ textarea {
   z-index: 0;
 }
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes stop-pulsate {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
 .mav-solutions {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
