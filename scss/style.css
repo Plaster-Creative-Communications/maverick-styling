@@ -652,6 +652,10 @@ textarea {
   color: #337EB5;
 }
 
+.page-header {
+  display: none !important;
+}
+
 .mav-teams {
   max-width: 100% !important;
   overflow: clip !important;
