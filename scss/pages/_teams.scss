@@ -2,6 +2,7 @@
     max-width: 100%;
     overflow: clip;
     background: white;
+    position: relative;
     .mav-larger-text {
         font-size: 1.7em;
     }
@@ -117,6 +118,7 @@
             border-top: 1px $tealDark solid;
             padding-block: 15px;
             display: flex;
+            justify-content: space-between;
             &:hover {
                 .mav-teams__arrow {
                     margin-right: 0;
@@ -124,6 +126,10 @@
             }
             &.white{
                 border-color:$white;
+            }
+            .mav-teams__arrow-p {
+                margin-left: auto;
+                width: fit-content;
             }
             .mav-teams__arrow {
                 margin-left: auto;
@@ -171,6 +177,9 @@
         padding-block: 50px;
         position: relative;
         overflow: clip;
+        &.mav-max-width {
+            padding-inline: 25px;
+        }
         &__inner {
             position: relative;
         }
@@ -278,7 +287,7 @@
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        padding: 15 25px;
+        padding: 15px 25px;
         z-index: 9;
         &__logo {
             width: 200px;
@@ -776,44 +785,7 @@
         //     position: fixed;
             // z-index: 999;
       }
-        &__nav-btn  {
-            width: 50px;
-            height: 50px;
-            // background-color: $white;
-            box-shadow: 0 0 6px rgba(0,0,0,0.18);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            outline: none;
-            border: none;
-            z-index: 9;
-            transition: 0.2s ease;
-            cursor: pointer;
-            &-prev {
-                position: absolute;
-                top: 50%;
-                left: 15px;
-                transform: translateY(-50%);
-                svg  {
-                    transform: rotate(-0);
-                  
-                }
-            }
-            &-next {
-                position: absolute;
-                top: 50%;
-                right: 15px;
-                transform: translateY(-50%);
-                svg  {
-                    transform: rotate(-180deg);
-                }  
-            }
-            svg {
-                width: 100%;
-                height:100%;
-            }
-        }
+     
     }
 
     .mav-grid {
@@ -935,18 +907,6 @@
                     animation-delay: 2s;
                     }
                 }
-                // &:after {
-                //     content: '';
-                //     position: absolute;
-                //     display: block;
-                //     width: 100%;
-                //     height: 100%;
-                //     border-radius: 50%;
-                //     border: 1px $teal_1 solid;
-                //     animation: pulsate 2s ease infinite ;
-                //     animation-delay: 0.5s;
-    
-                // }
                 &:before {
                     content: '';
                     position: absolute;
@@ -986,6 +946,59 @@
             }
   
          }
+        }   
+        &-nav-btn  {
+        
+            width: 10%;
+            height: 100%;
+            border-radius: 0;
+            box-shadow: unset;
+            background: rgba(20,190,212,0.0);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: none;
+            border: none;
+            z-index: 9;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+                background: rgba(20,190,212,0.08);
+                background: rgba(0,0,0,0.05);
+            }
+            svg {
+                width: 50px;
+                height: 50px;
+                max-width: 50px;
+                max-height: 50px;;
+                box-shadow: 0 0 6px rgba(0,0,0,0.18);
+                border-radius: 50%;
+                background: rgba(0,0,0,0.1);
+            }
+            &-wrapper {
+
+            }
+            &-prev {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                svg  {
+                    transform: rotate(-0);
+                  
+                }
+            }
+            &-next {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                svg  {
+                    transform: rotate(-180deg);
+                }  
+            }
+        
         }
         &-room {
             position: absolute;
@@ -1113,6 +1126,7 @@
                     position: absolute;
                     bottom:-10px;
                     width: 100%;
+    
                     // padding-top: 25px;
                     // border:  1px red solid;
                 }
@@ -1130,6 +1144,7 @@
                     z-index: 9;
                     transition: 0.2s ease;
                     cursor: pointer;
+          
                     &-prev {
                         position: relative;
                         top:unset;
@@ -1239,64 +1254,11 @@
                         display: block;
                     }
                 }
-                // &.slide-and-hide {
-                    //     transform: translate(100%, -50%);
-                //     opacity: 0;
-                //     transition: transform 0.6s ease-in, opacity 0.3s ease;
-                // }
-              
-                // &-logos {
-                //     display: flex;
-                //     gap: 30px;
-                //     padding-top:25px;
-                //     img {
-                //         height:60px;
-                //         width: fit-content;
-                //     }
-                // }
-                // &-room {
-                //     min-width: 100%;
-                //     opacity: 0;
-                //     transition: transform 0.3s ease, opacity 0.5s ease;
-                //     // transform: translateX(10%);
-                // }
-              
-                // &-close {
-                //     width: 50px;
-                //     height: 50px;
-                //     border-radius: 50%;
-                //     background: none;
-                //     border: none;
-                //     outline: none;
-                //     position: absolute;
-                //     top: 15px;
-                //     right:65px;
-                //     cursor: pointer;
-                //     background-color: rgba(255,255,255,0.7);
-                //     z-index: 9;
-                //     display: flex;
-                //     align-items: center;
-                //     justify-content: center;
-                //     @media(min-width: 900px) {
-                //         top: 25;
-                //         right:25px;
-                //     }
-                //     svg {
-                //         width: 40%;
-                //     }
-                // }
                 .mav-additional-heading {
                     border-bottom: 1px $teal solid;
                     padding-bottom: 10px;
                     margin-bottom: 10px;
                 }
-                // ul {
-                //     list-style-type: disc!important;
-                //     li {
-                //         list-style-type: disc!important;   
-                //         padding-block: 5px!important;
-                //     }
-                // }
         }
         &-hotspots {
             position: absolute;
@@ -1353,16 +1315,51 @@
     }
     &__scenario {
         cursor: pointer;
+        text-decoration:none;
+        position:relative;
+        &:hover {
+            .tooltip {
+                // display:block;
+                // position:fixed;
+                // overflow:hidden;
+            }
+      
+        }
+ 
+        .tooltip {
+            display:block;
+            background: rgba(0,0,0,0.1);
+            width: fit-content;
+            height: fit-content;
+            padding: 10px 15px;
+            border-radius: 3px;
+            color: black;
+            font-size: 1.2rem;
+       
+
+            position: fixed; /* Floating above */
+            transition: transform 0.23s; /* Sticking effect */
+            pointer-events: none; /* Allow clicking trough the div */
+
+            z-index: 99999;
+
+        }
         &.is-active {
             .mav-scenario__name {
                 opacity: 1;
                 transition: 0.3s ease-in;
             }
         }
+        &.is-next, &.is-prev{
+            pointer-events: none;
+        }
         .mav-scenario__name {
             opacity: 0;
             transition: 0.3s ease-in;
         }
+
+      
+  
     
     }
 .mav-teams__scenario-img {

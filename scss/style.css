@@ -656,6 +656,7 @@ textarea {
   max-width: 100%;
   overflow: clip;
   background: white;
+  position: relative;
 }
 .mav-teams .mav-larger-text {
   font-size: 1.7em;
@@ -762,12 +763,18 @@ textarea {
   border-top: 1px #08292B solid;
   padding-block: 15px;
   display: flex;
+  justify-content: space-between;
 }
 .mav-teams__table-row:hover .mav-teams__arrow {
   margin-right: 0;
 }
 .mav-teams__table-row.white {
   border-color: #ffffff;
+}
+.mav-teams__table-row .mav-teams__arrow-p {
+  margin-left: auto;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .mav-teams__table-row .mav-teams__arrow {
   margin-left: auto;
@@ -806,6 +813,9 @@ textarea {
   padding-block: 50px;
   position: relative;
   overflow: clip;
+}
+.mav-teams .mav-section.mav-max-width {
+  padding-inline: 25px;
 }
 .mav-teams .mav-section__inner {
   position: relative;
@@ -893,7 +903,7 @@ textarea {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  padding: 15 25px;
+  padding: 15px 25px;
   z-index: 9;
 }
 .mav-teams .mav-header__logo {
@@ -1236,42 +1246,6 @@ textarea {
 .mav-teams .mav-scenarios__modal-btn:hover, .mav-teams .mav-scenarios__hotspot-modal-btn:hover {
   border: 1px #575757 solid;
 }
-.mav-teams .mav-scenarios__nav-btn {
-  width: 50px;
-  height: 50px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  border: none;
-  z-index: 9;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-.mav-teams .mav-scenarios__nav-btn-prev {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-}
-.mav-teams .mav-scenarios__nav-btn-prev svg {
-  transform: rotate(0);
-}
-.mav-teams .mav-scenarios__nav-btn-next {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-}
-.mav-teams .mav-scenarios__nav-btn-next svg {
-  transform: rotate(-180deg);
-}
-.mav-teams .mav-scenarios__nav-btn svg {
-  width: 100%;
-  height: 100%;
-}
 .mav-teams .mav-grid {
   display: grid;
   gap: 25px;
@@ -1403,6 +1377,52 @@ textarea {
 .mav-teams__scenarios-carousel .splide__list, .mav-teams__scenarios-carousel .splide__slide {
   height: -moz-fit-content;
   height: fit-content;
+}
+.mav-teams__scenarios-nav-btn {
+  width: 10%;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: unset;
+  background: rgba(20, 190, 212, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  z-index: 9;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.mav-teams__scenarios-nav-btn:hover {
+  background: rgba(20, 190, 212, 0.08);
+  background: rgba(0, 0, 0, 0.05);
+}
+.mav-teams__scenarios-nav-btn svg {
+  width: 50px;
+  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.18);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+}
+.mav-teams__scenarios-nav-btn-prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.mav-teams__scenarios-nav-btn-prev svg {
+  transform: rotate(0);
+}
+.mav-teams__scenarios-nav-btn-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.mav-teams__scenarios-nav-btn-next svg {
+  transform: rotate(-180deg);
 }
 .mav-teams__scenarios-room {
   position: absolute;
@@ -1681,10 +1701,31 @@ textarea {
 }
 .mav-teams__scenario {
   cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+.mav-teams__scenario .tooltip {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 15px;
+  border-radius: 3px;
+  color: black;
+  font-size: 1.2rem;
+  position: fixed; /* Floating above */
+  transition: transform 0.23s; /* Sticking effect */
+  pointer-events: none; /* Allow clicking trough the div */
+  z-index: 99999;
 }
 .mav-teams__scenario.is-active .mav-scenario__name {
   opacity: 1;
   transition: 0.3s ease-in;
+}
+.mav-teams__scenario.is-next, .mav-teams__scenario.is-prev {
+  pointer-events: none;
 }
 .mav-teams__scenario .mav-scenario__name {
   opacity: 0;
