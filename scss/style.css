@@ -661,9 +661,13 @@ textarea {
   overflow: clip !important;
   background: white !important;
   position: relative !important;
+  max-width: 1140px !important;
 }
 .mav-teams .mav-larger-text {
   font-size: 1.7em !important;
+}
+.mav-teams .mav-img__parralax {
+  transform: scale(1.2);
 }
 .mav-teams .mav-heading__h1 {
   font-size: 67px !important;
@@ -712,6 +716,7 @@ textarea {
 }
 .mav-teams .mav-body-p {
   color: black !important;
+  font-family: "TWK Everett", "Arial" !important;
 }
 .mav-teams .mav__white {
   color: white !important;

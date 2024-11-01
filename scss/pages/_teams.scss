@@ -1,13 +1,18 @@
 .page-header {
     display: none!important;
 }
+
 .mav-teams {
     max-width: 100%!important;
     overflow: clip!important;
     background: white!important;
     position: relative!important;
+    max-width: 1140px!important;
     .mav-larger-text {
         font-size: 1.7em!important;
+    }
+    .mav-img__parralax  {
+        transform: scale(1.2);
     }
     .mav-heading {
         &__h1 {
@@ -59,6 +64,7 @@
     }    
     .mav-body-p { 
         color: black!important;
+        font-family: $font, 'Arial'!important;
     }
     
 .mav {
