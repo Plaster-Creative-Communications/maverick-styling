@@ -913,6 +913,9 @@ textarea {
   position: relative !important;
   height: 800px !important;
 }
+.mav-teams .mav-hero.simpleParallax {
+  height: 800px !important;
+}
 .mav-teams .mav-hero img {
   width: 100% !important;
   height: 100% !important;

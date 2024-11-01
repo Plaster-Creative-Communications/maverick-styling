@@ -298,6 +298,9 @@
     .mav-hero {
         position: relative!important;
         height: 800px!important;
+        &.simpleParallax  {
+            height: 800px!important;
+        }
         img {
             width: 100%!important;
             height: 100%!important;
