@@ -652,14 +652,22 @@ textarea {
   color: #337EB5;
 }
 
+.page-header {
+  display: none !important;
+}
+
 .mav-teams {
-  max-width: 100%;
-  overflow: clip;
-  background: white;
-  position: relative;
+  max-width: 100% !important;
+  overflow: clip !important;
+  background: white !important;
+  position: relative !important;
+  max-width: 1140px !important;
 }
 .mav-teams .mav-larger-text {
   font-size: 1.7em;
+}
+.mav-teams .mav-img__parralax {
+  transform: scale(1.2);
 }
 .mav-teams .mav-heading__h1 {
   font-size: 67px !important;
@@ -707,7 +715,8 @@ textarea {
   font-weight: 600 !important;
 }
 .mav-teams .mav-body-p {
-  color: black;
+  color: black !important;
+  font-family: "TWK Everett", "Arial" !important;
 }
 .mav-teams .mav__white {
   color: white !important;
@@ -910,8 +919,11 @@ textarea {
   width: 200px;
 }
 .mav-teams .mav-hero {
-  position: relative;
-  height: 800px;
+  position: relative !important;
+  height: 800px !important;
+}
+.mav-teams .mav-hero .simpleParallax {
+  height: 800px !important;
 }
 .mav-teams .mav-hero img {
   width: 100%;
