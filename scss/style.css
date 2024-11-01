@@ -669,6 +669,9 @@ textarea {
 .mav-teams .mav-img__parralax {
   transform: scale(1.2);
 }
+.mav-teams .mav-teams__action-btn a {
+  text-decoration: none !important;
+}
 .mav-teams .mav-heading__h1 {
   font-size: 67px !important;
   font-weight: 400 !important;
