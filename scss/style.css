@@ -721,9 +721,11 @@ textarea {
   font-weight: 600 !important;
 }
 .mav-teams .mav-body-p {
-  color: black !important;
   font-family: "TWK Everett", "Arial" !important;
   font-size: 1.6rem !important;
+}
+.mav-teams .mav-body-p.med {
+  font-size: 2rem !important;
 }
 .mav-teams .mav-body-p.lrg {
   font-size: 2.2rem !important;

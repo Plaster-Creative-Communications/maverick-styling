@@ -69,9 +69,13 @@
         }
     }    
     .mav-body-p { 
-        color: black!important;
+        // color: black!important;
         font-family: $font, 'Arial'!important;
         font-size: 1.6rem!important;
+        &.med {
+            font-size: 2rem!important;
+            // color: $tealDark!important;
+        }
         &.lrg {
             font-size: 2.2rem!important;
             color: $tealDark!important;
