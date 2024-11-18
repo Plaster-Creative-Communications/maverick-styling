@@ -72,6 +72,10 @@
         color: black!important;
         font-family: $font, 'Arial'!important;
         font-size: 1.6rem!important;
+        &.lrg {
+            font-size: 2.2rem!important;
+            color: $tealDark!important;
+        }
     }
     
 .mav {
@@ -113,6 +117,10 @@
         }   
     }
 
+    .mav-2-cols {
+        display: flex;
+        gap: 25px;
+    }
     &__list {
       
         margin-top: 50px!important;

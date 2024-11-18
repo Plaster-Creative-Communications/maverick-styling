@@ -230,6 +230,9 @@ textarea {
 .mav-bg__grad {
   background: linear-gradient(146deg, rgb(30, 181, 209) 19%, rgb(29, 176, 203) 31%, rgb(27, 163, 186) 46%, rgb(24, 141, 159) 63%, rgb(21, 111, 121) 82%, rgb(17, 78, 80) 100%) !important;
 }
+.mav-bg__grey {
+  background: #F4F4F2 !important;
+}
 
 .mav-max-width {
   max-width: 1500px;
@@ -722,6 +725,10 @@ textarea {
   font-family: "TWK Everett", "Arial" !important;
   font-size: 1.6rem !important;
 }
+.mav-teams .mav-body-p.lrg {
+  font-size: 2.2rem !important;
+  color: #08292B !important;
+}
 .mav-teams .mav__white {
   color: white !important;
 }
@@ -754,6 +761,10 @@ textarea {
 }
 .mav-teams .mav-line.teal {
   background-color: #114E50 !important;
+}
+.mav-teams .mav-2-cols {
+  display: flex;
+  gap: 25px;
 }
 .mav-teams__list {
   margin-top: 50px !important;
