@@ -709,6 +709,9 @@ textarea {
 .logi-smb .mav-heading__h2 {
   text-align: center;
 }
+.logi-smb .mav-heading__h5 {
+  color: #000000 !important;
+}
 .logi-smb__header {
   position: absolute;
   top: 0;
@@ -783,6 +786,14 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 0;
+}
+.logi-smb__bg-white-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: #ffffff;
+  position: relative;
   z-index: 0;
 }
 .logi-smb__button {
@@ -913,6 +924,49 @@ textarea {
   color: #3196B8 !important;
   text-transform: uppercase;
 }
+.logi-smb__table {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+.logi-smb__table-list {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+.logi-smb__table-list-top {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px #2C7C97 solid;
+  padding-inline: 15px;
+  border-radius: 0px;
+}
+.logi-smb__table-list-top h3 {
+  color: #3196B8 !important;
+  text-transform: uppercase;
+}
+.logi-smb__table-row {
+  padding-inline: 15px;
+  border-radius: 10px;
+  padding-block: 5px;
+}
+.logi-smb__table-row:nth-of-type(odd) {
+  background-color: rgba(106, 191, 234, 0.33);
+}
+.logi-smb__table-row p, .logi-smb__table-row h3 {
+  padding: 0 !important;
+}
+.logi-smb__table-row.link {
+  display: flex;
+  align-items: center;
+}
+.logi-smb__table-row.link:nth-of-type(odd) {
+  background-color: unset;
+}
+.logi-smb__table-row.link a {
+  border-bottom: 1px #6ABFEA solid;
+  margin-right: 15px;
+}
 .logi-smb__skiing-man {
   width: 700px;
   margin-left: 20%;
@@ -934,6 +988,19 @@ textarea {
 .logi-smb__mountain-range-btm {
   width: calc(100% + 100px);
   transform: translateX(-50px);
+}
+.logi-smb__full-width img {
+  width: 110%;
+  margin-left: -5%;
+}
+.logi-smb__section {
+  position: relative;
+}
+.logi-smb__skis {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
 }
 
 .mav-solutions {
