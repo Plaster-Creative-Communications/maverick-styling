@@ -13,6 +13,8 @@
     .mav-heading{
         &__h2 {
         text-align: center;
+        }&__h5 {
+            color: #000000!important;
         }
     }
     &__header {
@@ -94,6 +96,15 @@
                 z-index: 0;
             }
     
+        }
+        &-white-2 {
+            // background-image: url(https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/logi-smb-blue-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background: $white;
+            position: relative;
+            z-index: 0;
         }
     }
     &__button {
@@ -235,6 +246,57 @@
              }
         }
     }
+    &__table {
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+        &-list {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 50px;
+         
+            &-top {
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+                border-bottom: 1px #2C7C97 solid;
+                padding-inline: 15px;
+                border-radius: 0px;
+                h3 {
+                    color: #3196B8!important;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        &-row {
+            // display:grid;
+            // grid-template-columns: .5fr 1fr;
+            padding-inline: 15px;
+            border-radius: 10px;
+            padding-block:5px;
+            &:nth-of-type(odd) {
+                background-color: rgba(106, 191, 234, .33);
+            }
+            p,h3 {
+                padding: 0!important;
+
+            }
+            &.link {
+                display: flex;
+                align-items: center;
+                &:nth-of-type(odd) {
+                    background-color: unset;
+                }
+                a {
+                    border-bottom: 1px #6ABFEA solid;   
+                    margin-right: 15px;
+                 
+                }
+                svg {
+                        
+                }
+            }
+        }
+    }
     &__skiing-man {
         width: 700px;    
         margin-left: 20%;    
@@ -263,5 +325,21 @@
     }
     &__pad-top {
         padding-top: 400px;
+    }
+    &__full-width {
+        img {
+            width: 110%;
+            margin-left: -5%;
+        }
+    }
+    &__section {
+        position: relative;
+        
+    }
+    &__skis {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 100px;
     }
 }
