@@ -1008,6 +1008,19 @@ textarea {
   right: 50px;
   width: 100px;
 }
+.logi-smb .menu {
+  padding: 1.5rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  background: rgba(106, 191, 234, 0.33);
+}
+.logi-smb .menu a {
+  font-size: 2rem;
+}
+.logi-smb .menu a:hover {
+  text-decoration: underline;
+}
 
 .mav-solutions {
   display: grid;

@@ -342,4 +342,19 @@
         right: 50px;
         width: 100px;
     }
+
+    .menu {
+        padding: 1.5rem;
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        background: rgba(106, 191, 234, 0.33);
+
+        a {
+            font-size: 2rem;  
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
