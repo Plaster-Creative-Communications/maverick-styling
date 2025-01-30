@@ -810,9 +810,6 @@ textarea {
 }
 .logi-smb__gondala {
   margin-bottom: 50px;
-  width: calc(100% + 100px);
-  margin-left: -50px;
-  margin-top: -100px;
 }
 .logi-smb-heading__underline {
   margin-bottom: 50px;
@@ -973,8 +970,8 @@ textarea {
 .logi-smb__skiing-man {
   width: 700px;
   margin-left: 20%;
-  position: absolute;
-  top: -520px;
+  margin-top: -200px;
+  margin-bottom: 50px;
 }
 .logi-smb__underline {
   border-bottom: 1px #6ABFEA solid;
@@ -992,9 +989,6 @@ textarea {
   width: calc(100% + 100px);
   transform: translateX(-50px);
 }
-.logi-smb__pad-top {
-  padding-top: 400px;
-}
 .logi-smb__full-width img {
   width: 110%;
   margin-left: -5%;
@@ -1007,6 +1001,19 @@ textarea {
   top: 50px;
   right: 50px;
   width: 100px;
+}
+.logi-smb .menu {
+  padding: 1.5rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  background: rgba(106, 191, 234, 0.33);
+}
+.logi-smb .menu a {
+  font-size: 2rem;
+}
+.logi-smb .menu a:hover {
+  text-decoration: underline;
 }
 
 .mav-solutions {
