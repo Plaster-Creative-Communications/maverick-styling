@@ -952,12 +952,15 @@ textarea {
   padding-inline: 15px;
   border-radius: 10px;
   padding-block: 5px;
+  display: flex;
+  gap: 3em;
 }
 .logi-smb__table-row:nth-of-type(odd) {
   background-color: rgba(106, 191, 234, 0.33);
 }
 .logi-smb__table-row p, .logi-smb__table-row h3 {
   padding: 0 !important;
+  width: 33.3%;
 }
 .logi-smb__table-row.link {
   display: flex;
