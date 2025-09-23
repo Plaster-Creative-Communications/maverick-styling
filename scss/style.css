@@ -1025,6 +1025,417 @@ textarea {
   text-decoration: underline;
 }
 
+.maverick-miles {
+  background-color: #CEF8FF;
+  overflow: clip;
+}
+.maverick-miles p, .maverick-miles a {
+  font-family: "TWK Everett" !important;
+  color: #1C3052;
+}
+.maverick-miles h1, .maverick-miles h2, .maverick-miles h3, .maverick-miles h4, .maverick-miles h5, .maverick-miles h6 {
+  font-family: "TWK Everett" !important;
+  color: #1C3052 !important;
+  position: relative;
+}
+.maverick-miles h1 {
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 73px;
+  margin-bottom: 16px;
+}
+.maverick-miles h1 span {
+  font-weight: 500;
+}
+.maverick-miles h2 {
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 73px; /* 125.862% */
+  margin-bottom: 16px;
+}
+.maverick-miles p {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 16px;
+}
+.maverick-miles p b, .maverick-miles p strong {
+  font-weight: 700;
+}
+.maverick-miles .intro {
+  position: relative;
+}
+.maverick-miles .intro .stamp-left {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  max-width: 125px;
+}
+.maverick-miles .intro .stamp-right {
+  position: absolute;
+  bottom: 30%;
+  right: -10px;
+  max-width: 175px;
+}
+.maverick-miles__container {
+  max-width: 80%;
+  margin-inline: auto;
+  padding: 80px 0;
+}
+.maverick-miles__header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 99;
+  max-width: 1280px;
+}
+.maverick-miles__hero {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(172deg, rgb(255, 255, 255) 0%, rgb(216, 241, 250) 17%, rgb(136, 211, 240) 45%, rgb(77, 190, 233) 71%, rgb(40, 177, 228) 90%, rgb(27, 172, 227) 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  height: 707px;
+}
+.maverick-miles__hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 105%;
+  height: 100%;
+  background-image: url(images/header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.maverick-miles__hero h1, .maverick-miles__hero p {
+  position: relative;
+  z-index: 1;
+  color: #1C3052 !important;
+  max-width: 500px !important;
+}
+.maverick-miles__logo {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+.maverick-miles__bg-blue {
+  background-image: url(https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/maverick-miles-blue-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 0;
+}
+.maverick-miles__bg-blue-grad {
+  background-image: unset;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(136, 211, 240) 25%, rgb(255, 255, 255) 50%, rgb(195, 233, 247) 71%);
+  position: relative;
+  z-index: 0;
+}
+.maverick-miles__bg-mountain {
+  padding-bottom: 70px;
+}
+.maverick-miles__bg-mountain:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  background-image: url(https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/maverick-miles-mountain-range.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+.maverick-miles__bg-white-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: #fff;
+  position: relative;
+  z-index: 0;
+}
+.maverick-miles__button {
+  display: block;
+  background: #1C3052;
+  color: white !important;
+  padding: 15px 30px;
+  position: relative;
+  z-index: 99;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.maverick-miles__leaderboardimg {
+  margin-bottom: -100px;
+  width: calc(100% + 100px);
+  margin-left: -50px;
+  margin-top: -100px;
+  position: absolute;
+}
+.maverick-miles-heading__underline {
+  margin-bottom: 50px;
+}
+.maverick-miles-heading__underline:after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 40px;
+  background-image: url(https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/maverick-miles-heading-bottom.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.maverick-miles__leaderboard {
+  width: 100%;
+  margin-inline: auto;
+  position: relative;
+  z-index: 1;
+}
+.maverick-miles__leaderboard-skis {
+  position: absolute;
+  bottom: -100px;
+  right: -70px;
+  width: 100px;
+}
+.maverick-miles__leaderboard-inner {
+  padding: 50px 0;
+  width: 100%;
+}
+.maverick-miles__leaderboard-table {
+  position: relative;
+  z-index: 2;
+}
+.maverick-miles__leaderboard-table-row {
+  display: grid;
+  grid-template-columns: 0.2fr 1.5fr 0.5fr 0.5fr;
+  padding-inline: 25px;
+  border-radius: 36px;
+  padding-block: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  background-color: white;
+}
+.maverick-miles__leaderboard-table-row p {
+  margin-bottom: 0;
+}
+.maverick-miles__leaderboard-table-row.medals {
+  background-color: white;
+  border: 1px solid #30BFD7;
+  opacity: 1;
+}
+.maverick-miles__leaderboard-table-row.highlight {
+  background-color: white;
+  opacity: 1;
+}
+.maverick-miles__leaderboard-table-row .rank {
+  text-align: center;
+}
+.maverick-miles__leaderboard-table-row .rank.gold:before {
+  content: url("images/gold.svg");
+}
+.maverick-miles__leaderboard-table-row .rank.gold span {
+  display: none;
+}
+.maverick-miles__leaderboard-table-row .rank.silver:before {
+  content: url("images/silver.svg");
+}
+.maverick-miles__leaderboard-table-row .rank.silver span {
+  display: none;
+}
+.maverick-miles__leaderboard-table-row .rank.bronze:before {
+  content: url("images/bronze.svg");
+}
+.maverick-miles__leaderboard-table-row .rank.bronze span {
+  display: none;
+}
+.maverick-miles__leaderboard-table-row p, .maverick-miles__leaderboard-table-row h3 {
+  padding: 0 !important;
+}
+.maverick-miles__leaderboard-table-top {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  padding-inline: 25px;
+  border-radius: 0px;
+  opacity: 1;
+  background-color: transparent;
+}
+.maverick-miles__leaderboard-table-top h3 {
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+.maverick-miles__kpis {
+  padding-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+.maverick-miles__kpis-table {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+.maverick-miles__kpis-table-row {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  padding-inline: 25px;
+  border-radius: 36px;
+  padding-block: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #30BFD7;
+}
+.maverick-miles__kpis-table-row p {
+  margin-bottom: 0;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 18px; /* 90% */
+}
+.maverick-miles__kpis-table-row p b, .maverick-miles__kpis-table-row p strong {
+  font-weight: 700 !important;
+}
+.maverick-miles__kpis-table-row p.left {
+  text-align: left;
+}
+.maverick-miles__kpis-table-row p.right {
+  text-align: right;
+}
+.maverick-miles__kpis-table-top {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px #2C7C97 solid;
+  padding-inline: 15px;
+  border-radius: 0px;
+}
+.maverick-miles__kpis-table-top h3 {
+  color: #3196B8 !important;
+  text-transform: uppercase;
+}
+.maverick-miles__table {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+.maverick-miles__table-list {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+.maverick-miles__table-list-top {
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  border-bottom: 1px #2C7C97 solid;
+  padding-inline: 15px;
+  border-radius: 0px;
+}
+.maverick-miles__table-list-top h3 {
+  color: #3196B8 !important;
+  text-transform: uppercase;
+}
+.maverick-miles__table-row {
+  padding-inline: 15px;
+  border-radius: 10px;
+  padding-block: 5px;
+  display: flex;
+  gap: 3em;
+}
+.maverick-miles__table-row:nth-of-type(odd) {
+  background-color: rgba(106, 191, 234, 0.33);
+}
+.maverick-miles__table-row p, .maverick-miles__table-row h3 {
+  padding: 0 !important;
+  width: 33.3%;
+}
+.maverick-miles__table-row.link {
+  display: flex;
+  align-items: center;
+}
+.maverick-miles__table-row.link:nth-of-type(odd) {
+  background-color: unset;
+}
+.maverick-miles__table-row.link a {
+  border-bottom: 1px #6ABFEA solid;
+  margin-right: 15px;
+}
+.maverick-miles__kpiimg {
+  margin-bottom: -100px;
+  width: calc(100% + 100px);
+  margin-left: -50px;
+  margin-top: 100px;
+  position: absolute;
+}
+.maverick-miles__underline {
+  border-bottom: 1px #6ABFEA solid;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 !important;
+}
+.maverick-miles .no-pad {
+  padding: 0 !important;
+}
+.maverick-miles__t-and-cs a {
+  display: block;
+}
+.maverick-miles__mountain-range-btm {
+  width: calc(100% + 100px);
+  transform: translateX(-50px);
+}
+.maverick-miles__pad-top {
+  padding-top: 400px;
+}
+.maverick-miles__full-width img {
+  width: 110%;
+  margin-left: -5%;
+}
+.maverick-miles__section {
+  position: relative;
+}
+.maverick-miles__skis {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 100px;
+}
+.maverick-miles .footer-img {
+  width: 100%;
+}
+.maverick-miles .menu {
+  padding: 1.5rem;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  background: rgba(106, 191, 234, 0.33);
+}
+.maverick-miles .menu a {
+  font-size: 2rem;
+}
+.maverick-miles .menu a:hover {
+  text-decoration: underline;
+}
+
 .mav-solutions {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

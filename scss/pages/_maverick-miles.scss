@@ -1,0 +1,461 @@
+.maverick-miles {
+    background-color: #CEF8FF;
+    overflow:clip;
+
+    p,a { 
+        font-family: 'TWK Everett'!important;
+        color: #1C3052;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        font-family: 'TWK Everett'!important;
+        color: #1C3052!important;
+        position:relative;
+    }
+
+    h1 {
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 73px;
+        margin-bottom: 16px;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    h2 {
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 73px; /* 125.862% */
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+        margin-bottom: 16px;
+
+        b, strong {
+            font-weight: 700;
+        }
+    }
+
+    .intro {
+        position: relative;
+
+        .stamp-left {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            max-width: 125px;
+        }
+
+        .stamp-right {
+            position: absolute;
+            bottom: 30%;
+            right: -10px;
+            max-width: 175px;
+        }
+    }
+
+    &__container {
+        max-width: 80%;
+        margin-inline: auto;
+        padding: 80px 0;
+    }
+
+    &__header {
+        position: absolute;
+        top:0;
+        left:50%;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 99;
+        max-width: 1280px;
+    }
+    &__hero {
+        background: rgb(255,255,255);
+        background: linear-gradient(172deg, rgba(255,255,255,1) 0%, rgba(216,241,250,1) 17%, rgba(136,211,240,1) 45%, rgba(77,190,233,1) 71%, rgba(40,177,228,1) 90%, rgba(27,172,227,1) 100%);
+        // height: 700px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+        padding-bottom: 30px;
+        height: 707px;
+        &:after {
+            content: "";
+            position: absolute;
+            top:0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 105%;
+            height: 100%;
+            background-image: url(images/header.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            z-index: 0;
+        }
+        h1,p  {
+            position: relative;
+            z-index: 1;
+            color: #1C3052!important;
+            max-width: 500px!important;
+        }
+    }
+    &__logo {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        margin-bottom:15px;
+    }
+    &__bg {
+        &-blue {
+            background-image: url(https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/maverick-miles-blue-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: 0;
+        }
+        &-blue-grad {
+            background-image: unset;
+            background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(136,211,240,1) 25%, rgba(255,255,255,1) 50%, rgba(195,233,247,1) 71%);
+            position: relative;
+            z-index: 0;
+        }
+        &-mountain {
+            padding-bottom: 70px;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom:0;
+                left:0;
+                width: 100%;
+                height:  600px;
+                background-image: url(https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/maverick-miles-mountain-range.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                z-index: 0;
+            }
+    
+        }
+        &-white-2 {
+            // background-image: url(https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/maverick-miles-blue-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background: #fff;
+            position: relative;
+            z-index: 0;
+        }
+    }
+    &__button {
+        display: block;
+        background: #1C3052;
+        color: white!important;
+        padding: 15px 30px;
+        position: relative;
+        z-index: 99;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 4px;
+        margin-top: 5px;
+    }
+    &__leaderboardimg {
+        margin-bottom: -100px;
+        width: calc(100% + 100px);
+        margin-left: -50px;
+        margin-top: -100px;
+        position: absolute;
+    }
+    &-heading {
+        &__underline {
+            margin-bottom: 50px;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom:-35px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 300px;
+                height: 40px;;
+                background-image: url(https://eu.tdsynnex.com/Nuploads/Country/COM/Images/eu_website/maverick-miles-heading-bottom.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+            }
+        }
+    }
+    &__leaderboard {
+        // height: 800px;
+        width: 100%;
+        margin-inline: auto;;
+        position: relative;
+        z-index: 1;
+
+        &-skis {
+            position: absolute;
+            bottom:-100px;
+            right:-70px;
+            width: 100px;;
+        }
+        &-inner {
+            padding: 50px 0;
+            width: 100%;
+        }
+        &-table {
+            position: relative;
+            z-index: 2;
+             &-row {
+                display:grid;
+                grid-template-columns: 0.2fr 1.5fr 0.5fr 0.5fr;
+                padding-inline: 25px;
+                border-radius: 36px;
+                padding-block:10px;
+                align-items: center;
+                margin-bottom: 10px;
+                opacity: 0.5;
+                background-color: white; 
+                p {
+                    margin-bottom: 0;
+                }
+               &.medals {
+                    background-color: white;
+                    border: 1px solid #30BFD7;
+                    opacity: 1;
+                }
+               &.highlight {
+                    background-color: white; 
+                    opacity: 1;                   
+                }
+                .rank {
+                        text-align: center;
+                    
+                    &.gold {
+                        &:before {
+                            content: url('images/gold.svg');
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+                    &.silver {
+                        &:before {
+                            content: url('images/silver.svg');
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+                    &.bronze {
+                        &:before {
+                            content: url('images/bronze.svg');
+                        }
+
+                        span {
+                            display: none;
+                        }
+                    }
+                }
+                p,h3 {
+                    padding: 0!important;
+
+                }
+             }
+             &-top {
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+                padding-inline: 25px;
+                border-radius: 0px;
+                opacity: 1;
+                background-color: transparent; 
+                h3 {
+                    font-size: 20px !important;
+                    font-style: normal;
+                    font-weight: 500 !important;
+                    text-transform: uppercase;
+                    line-height: 18px
+                }
+             }
+        }
+    }
+    &__kpis {
+            padding-top: 50px;
+            width: 100%;
+            height: 100%;
+
+        &-table {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 50px;
+             &-row {
+                display:grid;
+                grid-template-columns: 0.5fr 3fr;
+                padding-inline: 25px;
+                border-radius: 36px;
+                padding-block:10px;
+                align-items: center;
+                margin-bottom: 10px;
+                background-color: white; 
+                border: 1px solid #30BFD7;
+                p {
+                    margin-bottom: 0;
+                    font-size: 20px !important;
+                    font-style: normal;
+                    font-weight: 500 !important;
+                    line-height: 18px; /* 90% */
+
+                    b, strong {
+                        font-weight: 700 !important;
+                    }
+
+                    &.left {
+                        text-align: left;
+                    }
+
+                    &.right {
+                        text-align: right;
+                    }
+                }
+             }
+             &-top {
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+                border-bottom: 1px #2C7C97 solid;
+                padding-inline: 15px;
+                border-radius: 0px;
+                h3 {
+                    color: #3196B8!important;
+                    text-transform: uppercase;
+                }
+             }
+        }
+    }
+    &__table {
+        padding: 50px;
+        width: 100%;
+        height: 100%;
+        &-list {
+            position: relative;
+            z-index: 2;
+            margin-bottom: 50px;
+         
+            &-top {
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+                border-bottom: 1px #2C7C97 solid;
+                padding-inline: 15px;
+                border-radius: 0px;
+                h3 {
+                    color: #3196B8!important;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        &-row {
+            // display:grid;
+            // grid-template-columns: .5fr 1fr;
+            padding-inline: 15px;
+            border-radius: 10px;
+            padding-block:5px;
+            display: flex;
+            gap: 3em;
+            &:nth-of-type(odd) {
+                background-color: rgba(106, 191, 234, .33);
+            }
+            p,h3 {
+                padding: 0!important;
+                width: 33.3%;
+            }
+            &.link {
+                display: flex;
+                align-items: center;
+                &:nth-of-type(odd) {
+                    background-color: unset;
+                }
+                a {
+                    border-bottom: 1px #6ABFEA solid;   
+                    margin-right: 15px;
+                 
+                }
+                svg {
+                        
+                }
+            }
+        }
+    }
+    &__kpiimg {
+        margin-bottom: -100px;
+        width: calc(100% + 100px);
+        margin-left: -50px;
+        margin-top: 100px;
+        position: absolute;
+    }
+    &__underline {
+         border-bottom: 1px #6ABFEA solid;
+         width: fit-content;
+         padding: 0!important;
+    }
+    .no-pad {
+        padding:0!important;
+    }
+    &__t-and-cs {
+        a {
+            display: block;
+        }
+    }
+    &__mountain-range-btm {
+        width: calc(100% + 100px);
+        transform: translateX(-50px)
+    }
+    &__pad-top {
+        padding-top: 400px;
+    }
+    &__full-width {
+        img {
+            width: 110%;
+            margin-left: -5%;
+        }
+    }
+    &__section {
+        position: relative;
+        
+    }
+    &__skis {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 100px;
+    }
+
+    .footer-img {
+        width: 100%;   
+    }
+    .menu {
+        padding: 1.5rem;
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        background: rgba(106, 191, 234, 0.33);
+
+        a {
+            font-size: 2rem;  
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
