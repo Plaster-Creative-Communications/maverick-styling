@@ -74,6 +74,10 @@ img {
   height: auto;
 }
 
+.imglogo {
+  width: auto;
+}
+
 input,
 textarea {
   border: none;
